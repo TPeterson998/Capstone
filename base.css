@@ -1,12 +1,58 @@
 @charset "utf-8";
 
 html {
-    background-image: ;
-    font-size: 1.3px;
-    font-family: 'Courier New', Courier, monospace;
+    background-image: url('capstone_pics/pexels-photo-268976.jpeg');
+
+    font-size: 2em;
 }
 
 body {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color: rgba(255, 255, 255, 0.781);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.781), rgba(233, 118, 41, 0.7))
+}
+
+nav img {
+    width: 20%;
+    float: left;
+    height: 2em;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.781);
+    height: 2em;
+}
+
+li {
+    list-style-type: none;
+    display: block;
+    float: left;
+    width: 20%;
+    margin-top: 10px;
+}
+
+a {
+    display: block;
+    text-align: center
+}
+
+header>img {
+    width: 5em;
+}
+
+header>h1 {
+    float: right;
+    font-size: 3.5em;
+    margin-top: 65px;
+}
+
+li a:hover,
+li a:active {
+    color: rgb(233, 121, 47);
+}
+
+li a:after,
+li a {
+    color: white;
 }
