@@ -11,7 +11,7 @@ html {
 body {
     margin-left: 150px;
     margin-right: 150px;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.781), rgba(233, 118, 41, 0.7))
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.781), rgba(233, 118, 41, 0.65))
 }
 
 /* This sets up the aviaton maintenance picture to fit the size of the nav bar */
