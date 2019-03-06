@@ -1,29 +1,33 @@
 @charset "utf-8";
 
+/* This sets up the background image and the font size of the site */
 html {
-    background-image: url('capstone_pics/pexels-photo-268976.jpeg');
-
+    background-image: url('capstone_pics/aeroplane-aircraft-airplane-35854.jpg');
+    background-size: cover;
     font-size: 2em;
 }
 
+/* This sets up the size of the body by adding margins and it also adds in a linear gradient  */
 body {
     margin-left: 150px;
     margin-right: 150px;
-    background-color: rgba(255, 255, 255, 0.781);
     background: linear-gradient(to right, rgba(255, 255, 255, 0.781), rgba(233, 118, 41, 0.7))
 }
 
+/* This sets up the aviaton maintenance picture to fit the size of the nav bar */
 nav img {
     width: 20%;
     float: left;
     height: 2em;
 }
 
+/* This sets up the size and color of the nav bar */
 nav {
     background-color: rgba(0, 0, 0, 0.781);
     height: 2em;
 }
 
+/* This sets up the positon and size of all of the text in the nav */
 li {
     list-style-type: none;
     display: block;
@@ -32,21 +36,25 @@ li {
     margin-top: 10px;
 }
 
+/* This centers the text of the nav  */
 a {
     display: block;
     text-align: center
 }
 
+/* This sizes the west-mec arrows */
 header>img {
     width: 5em;
 }
 
+/* This sizes the text at the top of the page */
 header>h1 {
     float: right;
     font-size: 3.5em;
     margin-top: 65px;
 }
 
+/* These styles set up the colors for hyper links in the nav bar */
 li a:hover,
 li a:active {
     color: rgb(233, 121, 47);
@@ -55,4 +63,9 @@ li a:active {
 li a:after,
 li a {
     color: white;
+}
+
+/* This sets up color in the footer */
+footer {
+    background-color: rgb(0, 0, 0, .781)
 }
