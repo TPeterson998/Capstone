@@ -5,14 +5,15 @@ html {
     background-image: url('capstone_pics/aeroplane-aircraft-airplane-35854.jpg');
     background-size: cover;
     font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* This sets up the size of the body by adding margins and it also adds in a linear gradient  */
 body {
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 160px;
+    margin-right: 140px;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.781), rgba(233, 118, 41, 0.65));
-    min-height: 22em;
+    min-height: 26em;
 }
 
 /* This sets up the aviaton maintenance picture to fit the size of the nav bar */
@@ -26,6 +27,11 @@ nav img {
 nav {
     background-color: rgba(0, 0, 0, 0.781);
     height: 2em;
+    position: absolute;
+    top: 170px;
+    left: 160px;
+    width: 79.25%;
+    display: block;
 }
 
 /* This sets up the positon and size of all of the text in the nav */
@@ -46,6 +52,7 @@ a {
 /* This sizes the west-mec arrows */
 header>img {
     width: 5em;
+    float: left;
 }
 
 /* This sizes the text at the top of the page */
