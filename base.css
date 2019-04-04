@@ -2,7 +2,7 @@
 
 /* This sets up the background image and the font size of the site */
 html {
-    background-image: url('capstone_pics/aeroplane-aircraft-airplane-35854.jpg');
+    background-image: url('architectural-design-architecture-bright-2059736.jpg');
     background-size: cover;
     font-size: 2em;
 }
@@ -23,7 +23,7 @@ nav img {
 
 /* This sets up the size and color of the nav bar */
 nav {
-    background-color: rgba(0, 0, 0, 0.781);
+    background-color: rgba(34, 32, 32, 0.781);
     height: 2em;
 }
 
@@ -71,8 +71,7 @@ footer {
     margin-top: 20px;
     padding: 2px 20px;
     text-align: center;
-    background-color: rgb(0, 0, 0, .781);
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    background-color: rgba(34, 32, 32, 0.781);
+    border-radius: 2px;
     letter-spacing: 5px;
 }
