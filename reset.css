@@ -1,4 +1,4 @@
-@charset "utf-8";
+/* @charset "utf-8";
 
 
 article,
@@ -62,7 +62,7 @@ colgroup {
 }
 
 
-/* Set the default page element styles */
+/* Set the default page element styles 
 
 body {
     line-height: 1.2em;
@@ -80,4 +80,4 @@ nav ul {
 
 nav a {
     text-decoration: none;
-}
+} */
