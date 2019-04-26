@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="mediaQuery.css">
 </head>
 
 <body id="myPage">
@@ -28,8 +27,9 @@
       class="w3-bar-item w3-button">Program Info</a>
     <a href="https://system.west-mec.org/application/admin_login.php?ReturnPage=application/admin_index.php"
       class="w3-bar-item w3-button">Apply</a>
-    <a href="#" class="w3-bar-item w3-button">Link 4</a>
-    <a href="#" class="w3-bar-item w3-button">Link 5</a>
+    <a href="https://west-mec.edu/" class="w3-bar-item w3-button">West-Mec</a>
+    <a href="https://www.skillsusa.org/?gclid=EAIaIQobChMI1aLF1qDs4QIVYhh9Ch006gqKEAAYASAAEgLrlvD_BwE"
+      class="w3-bar-item w3-button">Skills USA</a>
   </nav>
 
   <!-- Navbar -->
@@ -55,7 +55,7 @@
     <a href="#work" class="w3-bar-item w3-button">Work</a>
     <a href="#ctso" class="w3-bar-item w3-button">CTSO</a>
     <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    <a href="#" class="w3-bar-item w3-button">Search</a>
+    <!-- <a href="#" class="w3-bar-item w3-button">Search</a> -->
   </div>
   </div>
 
@@ -76,27 +76,31 @@
       <div class="w3-row"><br>
 
         <div class="w3-quarter">
-          <img src="capstone_pics/Jay McDowell.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h3>Jay McDowell</h3>
-          <!-- <p>.</p> -->
+          <img id="jayPic" src="capstone_pics/Jay McDowell.jpg" alt="Boss" style="width:45%"
+            class="w3-circle w3-hover-opacity">
+          <h3 id="1">Jay McDowell</h3>
+          <p style="display: none" id="jay">Jay McDowell teaches _______</p>
         </div>
 
         <div class="w3-quarter">
-          <img src="capstone_pics/Matthew Still.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h3>Matthew Still</h3>
-          <!-- <p>.</p> -->
+          <img src="capstone_pics/Matthew Still.jpg" id="mathewPic" alt="Boss" style="width:45%"
+            class="w3-circle w3-hover-opacity">
+          <h3 id="2">Matthew Still</h3>
+          <p style="display: none" id="mathew">Mathew Still teaches _______</p>
         </div>
 
         <div class="w3-quarter">
-          <img src="capstone_pics/Tama Mohelnitzky.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h3>Tama Mohelnitzky</h3>
-          <!-- <p>.</p> -->
+          <img src="capstone_pics/Tama Mohelnitzky.jpg" id="tamaPic" alt="Boss" style="width:45%"
+            class="w3-circle w3-hover-opacity">
+          <h3 id="3">Tama Mohelnitzky</h3>
+          <p style="display: none" id="tama">Tama Mohelnitzky teaches _______</p>
         </div>
 
         <div class="w3-quarter">
-          <img src="capstone_pics/Terry Menees.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h3>Terry Menees</h3>
-          <!-- <p>.</p> -->
+          <img src="capstone_pics/Terry Menees.jpg" id="terryPic" alt="Boss" style="width:45%"
+            class="w3-circle w3-hover-opacity">
+          <h3 id="4">Terry Menees</h3>
+          <p style="display: none" id="terry">Terry Menees teaches _________</p>
         </div>
 
       </div>
@@ -168,8 +172,8 @@
 
     <!-- CTSO Row -->
     <div class="w3-row-padding w3-center w3-padding-64" id="ctso">
-      <h2>CTSO</h2>
-      <div class="w3-">
+      <h1>CTSO</h1>
+      <div class="w3-third">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque repudiandae
           officia iure laudantium
           aspernatur, pariatur eius, cum perspiciatis delectus dignissimos quasi dolores itaque laborum placeat amet
@@ -177,13 +181,10 @@
           iure laudantium aspernatur, pariatur eius, cum perspiciatis delectus dignissimos quasi dolores itaque laborum
           placeat amet quam, nam nisi ipsam?</p>
       </div>
-      <div class="w3-quarter">
-        <img src="capstone_pics/skillsUSA.png" id="skillUsa" alt="Skills USA" style="width:200%;">
+      <div class="w3-third">
+        <img src="capstone_pics/skillsUSA.png" id="skillUsa" alt="Skills USA" style="width:100%;">
       </div>
-      <div class="w3-quarter">
-        <p> </p>
-      </div>
-      <div class="w3-quarter">
+      <div class="w3-third">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque repudiandae
           officia iure laudantium
           aspernatur, pariatur eius, cum perspiciatis delectus dignissimos quasi dolores itaque laborum placeat amet
@@ -282,6 +283,68 @@
         } else {
           x.className = x.className.replace(" w3-show", "");
         }
+      }
+
+      //All of these are used allow the user to click the teachers picture and a brief discription will pop up and if they click again then it will go away I couldn't figure out how to make it work in a couple of for loops because the [i] couldn't be recongnised inside of the anonymous function
+      document.getElementById("jayPic").onclick = function () {
+        document.getElementById("jayPic").style.display = "none";
+        document.getElementById("jay").style.display = "inline";
+        setTimeout(reapear, 10000)
+      }
+      document.getElementById("jay").onclick = function () {
+        document.getElementById("jay").style.display = "none";
+        document.getElementById("jayPic").style.display = "inline";
+      }
+      document.getElementById("terryPic").onclick = function () {
+        document.getElementById("terryPic").style.display = "none";
+        document.getElementById("terry").style.display = "inline";
+      }
+      document.getElementById("terry").onclick = function () {
+        document.getElementById("terry").style.display = "none";
+        document.getElementById("terryPic").style.display = "inline";
+      }
+      document.getElementById("tamaPic").onclick = function () {
+        document.getElementById("tamaPic").style.display = "none";
+        document.getElementById("tama").style.display = "inline";
+      }
+      document.getElementById("tama").onclick = function () {
+        document.getElementById("tama").style.display = "none";
+        document.getElementById("tamaPic").style.display = "inline";
+      }
+      document.getElementById("mathewPic").onclick = function () {
+        document.getElementById("mathewPic").style.display = "none";
+        document.getElementById("mathew").style.display = "inline";
+      }
+      document.getElementById("mathew").onclick = function () {
+        document.getElementById("mathew").style.display = "none";
+        document.getElementById("mathewPic").style.display = "inline";
+      }
+      document.getElementById("1").onclick = function () {
+        document.getElementById("jay").style.display = "none";
+        document.getElementById("jayPic").style.display = "inline";
+      }
+      document.getElementById("2").onclick = function () {
+        document.getElementById("mathew").style.display = "none";
+        document.getElementById("mathewPic").style.display = "inline";
+      }
+      document.getElementById("3").onclick = function () {
+        document.getElementById("tama").style.display = "none";
+        document.getElementById("tamaPic").style.display = "inline";
+      }
+      document.getElementById("4").onclick = function () {
+        document.getElementById("terry").style.display = "none";
+        document.getElementById("terryPic").style.display = "inline";
+      }
+      //this makes it so if you leave the picture on for to long then it sets back to normal
+      function reapear() {
+        document.getElementById("terry").style.display = "none";
+        document.getElementById("terryPic").style.display = "inline";
+        document.getElementById("tama").style.display = "none";
+        document.getElementById("tamaPic").style.display = "inline";
+        document.getElementById("mathew").style.display = "none";
+        document.getElementById("mathewPic").style.display = "inline";
+        document.getElementById("jay").style.display = "none";
+        document.getElementById("jayPic").style.display = "inline";
       }
     </script>
 
