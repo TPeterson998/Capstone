@@ -60,7 +60,7 @@
   <!-- this is the image at the top and has some built in styles-->
   <div class="w3-display-container w3-animate-opacity">
     <img src="capstone_pics/architectural-design-architecture-building-2071216.jpg" alt="boat"
-      style="width:100%;min-height:350px;max-height:600px;">
+      style="width:100%;min-height:400px;max-height:700px;" id="img">
     <div class="w3-container w3-display-bottomleft w3-margin-bottom">
     </div>
 
@@ -349,6 +349,17 @@
           message.setCustomValidity("");
         }
       }
+
+      var images = ["capstone_pics/aeroplane-aircraft-airplane-35854.jpg", "capstone_pics/abstract-air-cloud-36464.jpg",
+        "capstone_pics/aeroplane-air-aircraft-912050.jpg", "capstone_pics/aeroplane-air-aircraft-912050.jpg",
+        "capstone_pics/architectural-design-architecture-building-2071216.jpg"
+      ];
+
+      function slideImage() {
+        document.getElementById("img").setAttribute("src", )
+      }
+
+      setInterval(slideImage, 10000)
     </script>
 
 </body>
