@@ -13,9 +13,10 @@
 <body id="myPage">
 
   <!-- Sidebar on click -->
+  <!-- This uses w3 style sheets to make it so that when you click on the + sign on the right it will open a nav bar on the side with links to many different places with info -->
   <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2"
     id="mySidebar">
-    <h2>OutSide Files</h2>
+    <h1>OutSide Files</h1>
     <a href="javascript:void(0)" onclick="w3_close()"
       class="w3-bar-item w3-button w3-display-topright w3-text-orange">Close
       <i class="fa fa-remove"></i>
@@ -33,6 +34,7 @@
   </nav>
 
   <!-- Navbar -->
+  <!-- this is the top nav bar that it formated using w3 style sheets. the nav allows jumps down the page -->
   <div class="w3-top">
     <div class="w3-bar w3-theme-d2 w3-left-align">
       <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-#f7931d w3-theme-d2"
@@ -42,64 +44,59 @@
       <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-#f7931d">Work</a>
       <a href="#ctso" class="w3-bar-item w3-button w3-hide-small w3-hover-#f7931d">CTSO</a>
       <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-#f7931d">Contact</a>
-
     </div>
-  </div>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-orang" title="Search"><i
-      class="fa fa-search"></i></a>
-  </div>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="#team" class="w3-bar-item w3-button">Team</a>
-    <a href="#work" class="w3-bar-item w3-button">Work</a>
-    <a href="#ctso" class="w3-bar-item w3-button">CTSO</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-    <!-- <a href="#" class="w3-bar-item w3-button">Search</a> -->
-  </div>
+    <!-- Navbar on small screens -->
+    <!-- This uses the w3 style sheets to activate when the the screen is smaller to make the nav work better -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+      <a href="#team" class="w3-bar-item w3-button">Team</a>
+      <a href="#work" class="w3-bar-item w3-button">Work</a>
+      <a href="#ctso" class="w3-bar-item w3-button">CTSO</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
   </div>
 
   <!-- Image Header -->
+  <!-- this is the image at the top and has some built in styles-->
   <div class="w3-display-container w3-animate-opacity">
     <img src="capstone_pics/architectural-design-architecture-building-2071216.jpg" alt="boat"
       style="width:100%;min-height:350px;max-height:600px;">
     <div class="w3-container w3-display-bottomleft w3-margin-bottom">
-      <!-- <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-orange" title="Go To W3.CSS">LEARN W3.CSS</button> -->
-      <!-- </div> -->
     </div>
 
     <!-- Team Container -->
+    <!-- This uses the w3 style sheets to center the next part of the page-->
     <div class="w3-container w3-padding-64 w3-center" id="team">
       <h2>Instructors</h2>
       <p>Meet the team of Aviation Matinence Technology!</p>
 
       <div class="w3-row"><br>
-
+        <!-- this is all of the pictures and names of the teachers. Using the w3 style sheets they are separted into quarter and the picture are made into circles. There are also inline styles  -->
         <div class="w3-quarter">
           <img id="jayPic" src="capstone_pics/Jay McDowell.jpg" alt="Boss" style="width:45%"
             class="w3-circle w3-hover-opacity">
-          <h3 id="1">Jay McDowell</h3>
+          <h3 id="jayTitle">Jay McDowell</h3>
           <p style="display: none" id="jay">Jay McDowell teaches _______</p>
         </div>
 
         <div class="w3-quarter">
-          <img src="capstone_pics/Matthew Still.jpg" id="mathewPic" alt="Boss" style="width:45%"
+          <img src="capstone_pics/Matthew Still.jpg" id="matthewPic" alt="Boss" style="width:45%"
             class="w3-circle w3-hover-opacity">
-          <h3 id="2">Matthew Still</h3>
-          <p style="display: none" id="mathew">Mathew Still teaches _______</p>
+          <h3 id="matthewTitle">Matthew Still</h3>
+          <p style="display: none" id="matthew">Matthew Still teaches _______</p>
         </div>
 
         <div class="w3-quarter">
           <img src="capstone_pics/Tama Mohelnitzky.jpg" id="tamaPic" alt="Boss" style="width:45%"
             class="w3-circle w3-hover-opacity">
-          <h3 id="3">Tama Mohelnitzky</h3>
+          <h3 id="tamaTitle">Tama Mohelnitzky</h3>
           <p style="display: none" id="tama">Tama Mohelnitzky teaches _______</p>
         </div>
 
         <div class="w3-quarter">
           <img src="capstone_pics/Terry Menees.jpg" id="terryPic" alt="Boss" style="width:45%"
             class="w3-circle w3-hover-opacity">
-          <h3 id="4">Terry Menees</h3>
+          <h3 id="terryTitle">Terry Menees</h3>
           <p style="display: none" id="terry">Terry Menees teaches _________</p>
         </div>
 
@@ -107,10 +104,12 @@
     </div>
 
     <!-- Work Row -->
+    <!-- This is the next part of the site that is foramted using the w3 stylesheets -->
     <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
-
+      <!-- Useing the w3 style sheets this section of the page is divided into urters one for info the others for pictures -->
       <div class="w3-quarter">
         <h2>What you will be doing here</h2>
+        <!-- this is the info -->
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
           nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -119,7 +118,7 @@
           mollit anim id est
           laborum.</p>
       </div>
-
+      <!-- these are the pictures they have inline styles and use the w3 style sheets they also have the possibliltiy to have captions-->
       <div class="w3-quarter">
         <div class="w3-card w3-orange">
           <img src="capstone_pics/AV_1.JPG" alt="Snow" style="width:100%">
@@ -165,14 +164,17 @@
     </div>
 
     <!-- Container -->
+    <!-- This is the + sign that when clicked opens the side nav that was created above -->
     <div class="w3-container" style="position:relative">
       <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-orange"
         style="position:absolute;top:-28px;right:24px">+</a>
     </div>
 
     <!-- CTSO Row -->
+    <!-- This is the CTSO section of the page. Using the W3 style sheets this section of the page is formated -->
     <div class="w3-row-padding w3-center w3-padding-64" id="ctso">
       <h1>CTSO</h1>
+      <!-- using the w3 style sheets this section of the page is split into thirds with two thirds of it text with a picture spliting them -->
       <div class="w3-third">
         <p>Our CTSO is SkillsUSA. SkillsUSA is a partnership of students, teachers and industry working together to
           ensure America has a skilled workforce. Their main goal is to help students excel. SkillsUSA serves more than
@@ -181,6 +183,7 @@
         </p>
       </div>
       <div class="w3-third">
+        <!-- this is the picture it has some inline style -->
         <img src="capstone_pics/skillsUSA.png" id="skillUsa" alt="Skills USA" style="width:100%;">
       </div>
       <div class="w3-third">
@@ -193,42 +196,42 @@
     </div>
 
     <!-- Contact Container -->
+    <!-- this is the contact section of the sheet. This section of the site is formated using the W3 style sheets-->
     <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
       <div class="w3-row">
         <div class="w3-col m5">
           <div class="w3-padding-16"><span class="w3-xlarge w3-border-orange w3-bottombar">Contact </span></div>
           <h3>Address</h3>
-          <!-- <p>Swing by for a cup of coffee, or whatever.</p> -->
+
           <p><i class="fa fa-map-marker w3-text-orange w3-xlarge"></i> <b>Central Campus :</b>  6997 N. Glen Harbor
             Boulevard
             Glendale, AZ 85307</p>
 
           <p><i class="fa fa-phone w3-text-orange w3-xlarge"></i> <b>623-209-8070</b></p>
-          <!-- <p><i class="fa fa-envelope-o w3-text-orange w3-xlarge"></i>  test@test.com</p> -->
+          <!-- This is an iframe holding a conection to google maps at the west mec central campus -->
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.6720330141225!2d-112.29502618479842!3d33.53591168074957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b41030b775f07%3A0xca01072481b6137d!2s6997+N+Glen+Harbor+Blvd%2C+Glendale%2C+AZ+85307!5e0!3m2!1sen!2sus!4v1554757023961!5m2!1sen!2sus"
             width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
 
         </div>
+        <!-- This is the form section of the contact page you can input your name, email, and your message. The form doesn't acttully send the info anywhere though -->
         <div class="w3-col m7">
           <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
             <div class="w3-section">
               <label>Name</label>
-              <input class="w3-input" type="text" name="Name" required>
+              <input class="w3-input" type="text" name="Name" id="name" required>
             </div>
             <div class="w3-section">
               <label>Email</label>
-              <input class="w3-input" type="text" name="Email" required>
+              <input class="w3-input" type="text" name="Email" id="email" required>
             </div>
             <div class="w3-section">
               <label>Message</label>
-              <input class="w3-input" type="text" name="Message" required>
+              <input class="w3-input" type="text" name="Message" id="message" required>
 
             </div>
-            <!-- <input class="w3-check" type="checkbox" checked name="Like">
-      <label>I Like it!</label> -->
-            <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-
+            <!-- This is the submit button -->
+            <button id="subButton" type="submit" class="w3-button w3-right w3-theme">Send</button>
           </form>
         </div>
       </div>
@@ -238,6 +241,7 @@
     <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;"> -->
 
     <!-- Footer -->
+    <!-- this is the footer It has links to several social media -->
     <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
       <h4>Follow Us</h4>
       <a class="w3-button w3-large w3-orange" href="javascript:void(0)" title="Facebook"><i
@@ -250,17 +254,17 @@
           class="fa fa-instagram"></i></a>
       <a class="w3-button w3-large w3-orange w3-hide-small" href="javascript:void(0)" title="Linkedin"><i
           class="fa fa-linkedin"></i></a>
-      <!-- <p>#@123 <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
-
+      <!-- This is the setion that send you to te top of the page -->
       <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
         <span class="w3-text w3-padding w3-orange w3-hide-small">Go To Top</span>
         <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
             <i class="fa fa-chevron-circle-up"></i></span></a>
       </div>
     </footer>
-
+    <!-- This is the script for the website -->
     <script>
       // Script for side navigation
+      // this script pives the side nav spacing and size
       function w3_open() {
         var x = document.getElementById("mySidebar");
         x.style.width = "300px";
@@ -269,11 +273,13 @@
       }
 
       // Close side navigation
+      // This sets the display of the side nav to none so that it disapears
       function w3_close() {
         document.getElementById("mySidebar").style.display = "none";
       }
 
       // Used to toggle the menu on smaller screens when clicking on the menu button
+      // This allows the top nav to be clicked open out of the nav picture while the screen is smaller
       function openNav() {
         var x = document.getElementById("navDemo");
         if (x.className.indexOf("w3-show") == -1) {
@@ -282,70 +288,66 @@
           x.className = x.className.replace(" w3-show", "");
         }
       }
+      //this is an array of all of the teachers
+      var teachers = ["jay", "tama", "terry", "matthew"];
+      //using the array I can go through all of the id's witht he teachers name and the teachers pic and title
+      for (
+        let /* Jedi helped me with this if you use a var then the [i] can't get the scope of the anonymous functions if you use let then it can*/
+          i = 0; i < teachers.length; i++) {
+        //This on click make it so you can click the pictures and make the text appear and makeit so that the pictures reappear in 10 sec if you don't click it again
+        document.getElementById(teachers[i] + "Pic").onclick = function () {
+          document.getElementById(teachers[i] + "Pic").style.display = "none";
+          document.getElementById(teachers[i]).style.display = "inline";
+          setTimeout(reapear, 10000);
+        }
+        //This on click make it so you can click the text to make the pictures reapear 
+        document.getElementById(teachers[i]).onclick = function () {
+          document.getElementById(teachers[i]).style.display = "none";
+          document.getElementById(teachers[i] + "Pic").style.display = "inline";
+        }
+        //this make it so you can click the title so the pictures reapear
+        document.getElementById(teachers[i] + "Title").onclick = function () {
+          document.getElementById(teachers[i]).style.display = "none";
+          document.getElementById(teachers[i] + "Pic").style.display = "inline";
+        }
+      }
 
-      //All of these are used allow the user to click the teachers picture and a brief discription will pop up and if they click again then it will go away I couldn't figure out how to make it work in a couple of for loops because the [i] couldn't be recongnised inside of the anonymous function
-      document.getElementById("jayPic").onclick = function () {
-        document.getElementById("jayPic").style.display = "none";
-        document.getElementById("jay").style.display = "inline";
-        setTimeout(reapear, 10000);
-      }
-      document.getElementById("jay").onclick = function () {
-        document.getElementById("jay").style.display = "none";
-        document.getElementById("jayPic").style.display = "inline";
-      }
-      document.getElementById("terryPic").onclick = function () {
-        document.getElementById("terryPic").style.display = "none";
-        document.getElementById("terry").style.display = "inline";
-        setTimeout(reapear, 10000);
-      }
-      document.getElementById("terry").onclick = function () {
-        document.getElementById("terry").style.display = "none";
-        document.getElementById("terryPic").style.display = "inline";
-      }
-      document.getElementById("tamaPic").onclick = function () {
-        document.getElementById("tamaPic").style.display = "none";
-        document.getElementById("tama").style.display = "inline";
-        setTimeout(reapear, 10000);
-      }
-      document.getElementById("tama").onclick = function () {
-        document.getElementById("tama").style.display = "none";
-        document.getElementById("tamaPic").style.display = "inline";
-      }
-      document.getElementById("mathewPic").onclick = function () {
-        document.getElementById("mathewPic").style.display = "none";
-        document.getElementById("mathew").style.display = "inline";
-        setTimeout(reapear, 10000);
-      }
-      document.getElementById("mathew").onclick = function () {
-        document.getElementById("mathew").style.display = "none";
-        document.getElementById("mathewPic").style.display = "inline";
-      }
-      document.getElementById("1").onclick = function () {
-        document.getElementById("jay").style.display = "none";
-        document.getElementById("jayPic").style.display = "inline";
-      }
-      document.getElementById("2").onclick = function () {
-        document.getElementById("mathew").style.display = "none";
-        document.getElementById("mathewPic").style.display = "inline";
-      }
-      document.getElementById("3").onclick = function () {
-        document.getElementById("tama").style.display = "none";
-        document.getElementById("tamaPic").style.display = "inline";
-      }
-      document.getElementById("4").onclick = function () {
-        document.getElementById("terry").style.display = "none";
-        document.getElementById("terryPic").style.display = "inline";
-      }
       //this makes it so if you leave the picture on for to long then it sets back to normal
       function reapear() {
-        document.getElementById("terry").style.display = "none";
-        document.getElementById("terryPic").style.display = "inline";
-        document.getElementById("tama").style.display = "none";
-        document.getElementById("tamaPic").style.display = "inline";
-        document.getElementById("mathew").style.display = "none";
-        document.getElementById("mathewPic").style.display = "inline";
-        document.getElementById("jay").style.display = "none";
-        document.getElementById("jayPic").style.display = "inline";
+        for (var i = 0; i < teachers.length; i++) {
+          document.getElementById(teachers[i]).style.display = "none";
+          document.getElementById(teachers[i] + "Pic").style.display = "inline";
+        }
+      }
+      //this loads the validate form for the onclick of the submit button
+      window.onload = function () {
+        document.getElementById("subButton").onclick = validateForm;
+      }
+      //this checks to make sure the form is valid
+      function validateForm() {
+        // this part checks to make sure the name section is filled and if it is not it uses a custom alert
+        var name = document.getElementById("name");
+        if (name.validity.valueMissing) {
+          name.setCustomValidity("Enter Your Name Please");
+        } else {
+          name.setCustomValidity("");
+        }
+        // this part checks to make sure the email section is filled and if it is not it uses a custom alert and if it is not a proper email then it give a different alert
+        var email = document.getElementById("email");
+        if (email.validity.valueMissing) {
+          email.setCustomValidity("Enter Your Email Please");
+        } else if (/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(email.value) === false) {
+          email.setCustomValidity("Enter a Valid Email Please");
+        } else {
+          email.setCustomValidity("");
+        }
+        // this part checks to make sure the message section is filled and if it is not it uses a custom alert
+        var message = document.getElementById("message");
+        if (message.validity.valueMissing) {
+          message.setCustomValidity("Enter Your Message Please");
+        } else {
+          message.setCustomValidity("");
+        }
       }
     </script>
 
