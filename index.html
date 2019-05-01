@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- black ijmage borders so that it can look cleaner -->
   <style>
     .img {
       border: 5px solid rgb(0, 0, 0);
@@ -219,7 +220,7 @@
             width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
 
         </div>
-        <!-- This is the form section of the contact page you can input your name, email, and your message. The form doesn't acttully send the info anywhere though -->
+        <!-- This is the form section of the contact page you can input your name, email, and your message. The form doesn't acttully send the info anywhere though, just for the effect, design-->
         <div class="w3-col m7">
           <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
             <div class="w3-section">
@@ -242,8 +243,7 @@
       </div>
     </div>
 
-    <!-- Image of location/map -->
-    <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;"> -->
+  
 
     <!-- Footer -->
     <!-- this is the footer It has links to several social media -->
@@ -346,7 +346,7 @@
         } else {
           email.setCustomValidity("");
         }
-        // this part checks to make sure the message section is filled and if it is not it uses a custom alert
+        // validation;this part checks to make sure the message section is filled and if it is not it uses a custom alert
         var message = document.getElementById("message");
         if (message.validity.valueMissing) {
           message.setCustomValidity("Enter Your Message Please");
@@ -357,7 +357,7 @@
 
       var images = ["capstone_pics/aeroplane-aircraft-airplane-35854.jpg", "capstone_pics/abstract-air-cloud-36464.jpg",
         "capstone_pics/aeroplane-air-aircraft-912050.jpg", "capstone_pics/aeroplane-air-aircraft-912050.jpg",
-        "capstone_pics/architectural-design-architecture-building-2071216.jpg"
+        "capstone_pics/architectural-design-architecture-building-2071216.jpg", "capstone_pics/air-force-air-show-aircrafts-372797.jpg"
       ];
 
       function slideImage() {
