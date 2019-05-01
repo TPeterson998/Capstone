@@ -1,25 +1,372 @@
 <!DOCTYPE html>
 <html>
 
-<head></head>
-<title>Aviation Home</title>
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="base.css">
+<head>
+  <title>West-Mec Aviation Matinence Technology</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .img {
+      border: 5px solid rgb(0, 0, 0);
+    }
+  </style>
 </head>
 
-<body>
-    <header>
-        <img src="capstone_pics/Arrows.png" alt="" id="navicon">
-        <h1>West-Mec Aviation</h1>
-        <nav>
-            <img src="capstone_pics/Aviation Maintenance Technology.png" alt="">
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="About.html">About</a></li>
-            <li> <a href="Contact.html">Contact</a></li>
-            <li> <a href="CTSO.html">CTSO</a>
-            <li>
-        </nav>
-    </header>
+<body id="myPage">
+
+  <!-- Sidebar on click -->
+  <!-- This uses w3 style sheets to make it so that when you click on the + sign on the right it will open a nav bar on the side with links to many different places with info -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2"
+    id="mySidebar">
+    <h1>OutSide Files</h1>
+    <a href="javascript:void(0)" onclick="w3_close()"
+      class="w3-bar-item w3-button w3-display-topright w3-text-orange">Close
+      <i class="fa fa-remove"></i>
+    </a>
+    <!-- These are the links that are in the side nav -->
+    <a href="https://west-mec.edu/wp-content/uploads/2018/04/869_AVIATION_MAINTENANCE_TECHNOLOGY_SS.pdf"
+      class="w3-bar-item w3-button">Scope</a>
+    <a href="https://drive.google.com/file/d/1jtJiE_NkxZ0pFgI0V6Aw_DZONvPNfxAO/view"
+      class="w3-bar-item w3-button">Program Info</a>
+    <a href="https://system.west-mec.org/application/admin_login.php?ReturnPage=application/admin_index.php"
+      class="w3-bar-item w3-button">Apply</a>
+    <a href="https://west-mec.edu/" class="w3-bar-item w3-button">West-Mec</a>
+    <a href="https://www.skillsusa.org/?gclid=EAIaIQobChMI1aLF1qDs4QIVYhh9Ch006gqKEAAYASAAEgLrlvD_BwE"
+      class="w3-bar-item w3-button">Skills USA</a>
+  </nav>
+
+  <!-- Navbar -->
+  <!-- this is the top nav bar that it formated using w3 style sheets. the nav allows jumps down the page -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-#f7931d w3-theme-d2"
+        href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-orange"><i class="fa fa-home w3-margin-right"></i>Home</a>
+      <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-#f7931d">Team</a>
+      <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-#f7931d">Work</a>
+      <a href="#ctso" class="w3-bar-item w3-button w3-hide-small w3-hover-#f7931d">CTSO</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-#f7931d">Contact</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <!-- This uses the w3 style sheets to activate when the the screen is smaller to make the nav work better -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+      <a href="#team" class="w3-bar-item w3-button">Team</a>
+      <a href="#work" class="w3-bar-item w3-button">Work</a>
+      <a href="#ctso" class="w3-bar-item w3-button">CTSO</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+
+  <!-- Image Header -->
+  <!-- this is the image at the top and has some built in styles-->
+  <div class="w3-display-container w3-animate-opacity">
+    <img class="img" src="capstone_pics/architectural-design-architecture-building-2071216.jpg" alt="boat"
+      style="width:100%;min-height:400px;max-height:700px; height: 700px" id="img">
+    <div class="w3-container w3-display-bottomleft w3-margin-bottom">
+    </div>
+
+    <!-- Team Container -->
+    <!-- This uses the w3 style sheets to center the next part of the page-->
+    <div class="w3-container w3-padding-64 w3-center" id="team">
+      <h2>Instructors</h2>
+      <p>Meet the team of Aviation Matinence Technology!</p>
+
+      <div class="w3-row"><br>
+        <!-- this is all of the pictures and names of the teachers. Using the w3 style sheets they are separted into quarter and the picture are made into circles. There are also inline styles  -->
+        <div class="w3-quarter">
+          <img id="jayPic" src="capstone_pics/Jay McDowell.jpg" alt="Boss" style="width:45%"
+            class="w3-circle w3-hover-opacity img">
+          <h3 id="jayTitle">Jay McDowell</h3>
+          <p style="display: none" id="jay">Jay McDowell teaches _______</p>
+        </div>
+
+        <div class="w3-quarter">
+          <img src="capstone_pics/Matthew Still.jpg" id="matthewPic" alt="Boss" style="width:45%"
+            class="w3-circle w3-hover-opacity img">
+          <h3 id="matthewTitle">Matthew Still</h3>
+          <p style="display: none" id="matthew">Matthew Still teaches _______</p>
+        </div>
+
+        <div class="w3-quarter">
+          <img src="capstone_pics/Tama Mohelnitzky.jpg" id="tamaPic" alt="Boss" style="width:45%"
+            class="w3-circle w3-hover-opacity img">
+          <h3 id="tamaTitle">Tama Mohelnitzky</h3>
+          <p style="display: none" id="tama">Tama Mohelnitzky teaches _______</p>
+        </div>
+
+        <div class="w3-quarter">
+          <img src="capstone_pics/Terry Menees.jpg" id="terryPic" alt="Boss" style="width:45%"
+            class="w3-circle w3-hover-opacity img">
+          <h3 id="terryTitle">Terry Menees</h3>
+          <p style="display: none" id="terry">Terry Menees teaches _________</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Work Row -->
+    <!-- This is the next part of the site that is foramted using the w3 stylesheets -->
+    <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+      <!-- Useing the w3 style sheets this section of the page is divided into urters one for info the others for pictures -->
+      <div class="w3-quarter">
+        <h2>What you will be doing here</h2>
+        <!-- this is the info -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore
+          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est
+          laborum.</p>
+      </div>
+      <!-- these are the pictures they have inline styles and use the w3 style sheets they also have the possibliltiy to have captions-->
+      <div class="w3-quarter">
+        <div class="w3-card w3-orange">
+          <img class="img" src="capstone_pics/AV_1.JPG" alt="Snow" style="width:100%">
+          <div class="w3-container">
+            <!-- <h3>Customer 1</h3>
+  <h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-quarter">
+        <div class="w3-card w3-white">
+          <img class="img" src="capstone_pics/AV_11.JPG" alt="Lights" style="width:100%">
+          <div class="w3-container">
+            <!-- <h3>Customer 2</h3>
+  <h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-quarter">
+        <div class="w3-card w3-white">
+          <img class="img" src="capstone_pics/080418-F-1954M-906 (1).JPG" alt="Mountains" style="width:100%">
+          <div class="w3-container">
+            <!-- <h3>Customer 3</h3> -->
+            <!-- <h4>Trade</h4>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p>
+  <p>Blablabla</p> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Container -->
+    <!-- This is the + sign that when clicked opens the side nav that was created above -->
+    <div class="w3-container" style="position:relative">
+      <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-orange"
+        style="position:absolute;top:-28px;right:24px">+</a>
+    </div>
+
+    <!-- CTSO Row -->
+    <!-- This is the CTSO section of the page. Using the W3 style sheets this section of the page is formated -->
+    <div class="w3-row-padding w3-center w3-padding-64" id="ctso">
+      <h1>CTSO</h1>
+      <!-- using the w3 style sheets this section of the page is split into thirds with two thirds of it text with a picture spliting them -->
+      <div class="w3-third">
+        <p>Our CTSO is SkillsUSA. SkillsUSA is a partnership of students, teachers and industry working together to
+          ensure America has a skilled workforce. Their main goal is to help students excel. SkillsUSA serves more than
+          360,000 students and instructors annually. SKillsUSA has served more than 13.5 million members since 1965. Our
+          local chapter ......
+        </p>
+      </div>
+      <div class="w3-third">
+        <!-- this is the picture it has some inline style -->
+        <img src="capstone_pics/skillsUSA.png" id="skillUsa" alt="Skills USA" style="width:100%;">
+      </div>
+      <div class="w3-third">
+        <p>SkillsUSA focuses on building the three framework skills which are Technical, Personal, and Workplace. This
+          framework provides a common language for students to articulate what they gain from SkillsUSA to possible
+          employers. It allows students to assesses thier develpment in the skills they learn. It empowers students to
+          seize control of thier own learning to achieve a successful career. Most importantly it gives students a skill
+          set that it demanded by business and industry but lacking in many employees today.</p>
+      </div>
+    </div>
+
+    <!-- Contact Container -->
+    <!-- this is the contact section of the sheet. This section of the site is formated using the W3 style sheets-->
+    <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+      <div class="w3-row">
+        <div class="w3-col m5">
+          <div class="w3-padding-16"><span class="w3-xlarge w3-border-orange w3-bottombar">Contact </span></div>
+          <h3>Address</h3>
+
+          <p><i class="fa fa-map-marker w3-text-orange w3-xlarge"></i> <b>Central Campus :</b>  6997 N. Glen Harbor
+            Boulevard
+            Glendale, AZ 85307</p>
+
+          <p><i class="fa fa-phone w3-text-orange w3-xlarge"></i> <b>623-209-8070</b></p>
+          <!-- This is an iframe holding a conection to google maps at the west mec central campus -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.6720330141225!2d-112.29502618479842!3d33.53591168074957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b41030b775f07%3A0xca01072481b6137d!2s6997+N+Glen+Harbor+Blvd%2C+Glendale%2C+AZ+85307!5e0!3m2!1sen!2sus!4v1554757023961!5m2!1sen!2sus"
+            width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        </div>
+        <!-- This is the form section of the contact page you can input your name, email, and your message. The form doesn't acttully send the info anywhere though -->
+        <div class="w3-col m7">
+          <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+            <div class="w3-section">
+              <label>Name</label>
+              <input class="w3-input" type="text" name="Name" id="name" required>
+            </div>
+            <div class="w3-section">
+              <label>Email</label>
+              <input class="w3-input" type="text" name="Email" id="email" required>
+            </div>
+            <div class="w3-section">
+              <label>Message</label>
+              <input class="w3-input" type="text" name="Message" id="message" required>
+
+            </div>
+            <!-- This is the submit button -->
+            <button id="subButton" type="submit" class="w3-button w3-right w3-theme">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image of location/map -->
+    <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;"> -->
+
+    <!-- Footer -->
+    <!-- this is the footer It has links to several social media -->
+    <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+      <h4>Follow Us</h4>
+      <a class="w3-button w3-large w3-orange" href="javascript:void(0)" title="Facebook"><i
+          class="fa fa-facebook"></i></a>
+      <a class="w3-button w3-large w3-orange" href="javascript:void(0)" title="Twitter"><i
+          class="fa fa-twitter"></i></a>
+      <a class="w3-button w3-large w3-orange" href="javascript:void(0)" title="Google +"><i
+          class="fa fa-google-plus"></i></a>
+      <a class="w3-button w3-large w3-orange" href="javascript:void(0)" title="Google +"><i
+          class="fa fa-instagram"></i></a>
+      <a class="w3-button w3-large w3-orange w3-hide-small" href="javascript:void(0)" title="Linkedin"><i
+          class="fa fa-linkedin"></i></a>
+      <!-- This is the setion that send you to te top of the page -->
+      <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+        <span class="w3-text w3-padding w3-orange w3-hide-small">Go To Top</span>
+        <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+            <i class="fa fa-chevron-circle-up"></i></span></a>
+      </div>
+    </footer>
+    <!-- This is the script for the website -->
+    <script>
+      // Script for side navigation
+      // this script pives the side nav spacing and size
+      function w3_open() {
+        var x = document.getElementById("mySidebar");
+        x.style.width = "300px";
+        x.style.paddingTop = "10%";
+        x.style.display = "block";
+      }
+
+      // Close side navigation
+      // This sets the display of the side nav to none so that it disapears
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      // This allows the top nav to be clicked open out of the nav picture while the screen is smaller
+      function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+      //this is an array of all of the teachers
+      var teachers = ["jay", "tama", "terry", "matthew"];
+      //using the array I can go through all of the id's witht he teachers name and the teachers pic and title
+      for (
+        let /* Jedi helped me with this if you use a var then the [i] can't get the scope of the anonymous functions if you use let then it can*/
+          i = 0; i < teachers.length; i++) {
+        //This on click make it so you can click the pictures and make the text appear and makeit so that the pictures reappear in 10 sec if you don't click it again
+        document.getElementById(teachers[i] + "Pic").onclick = function () {
+          document.getElementById(teachers[i] + "Pic").style.display = "none";
+          document.getElementById(teachers[i]).style.display = "inline";
+          setTimeout(reapear, 10000);
+        }
+        //This on click make it so you can click the text to make the pictures reapear 
+        document.getElementById(teachers[i]).onclick = function () {
+          document.getElementById(teachers[i]).style.display = "none";
+          document.getElementById(teachers[i] + "Pic").style.display = "inline";
+        }
+        //this make it so you can click the title so the pictures reapear
+        document.getElementById(teachers[i] + "Title").onclick = function () {
+          document.getElementById(teachers[i]).style.display = "none";
+          document.getElementById(teachers[i] + "Pic").style.display = "inline";
+        }
+      }
+
+      //this makes it so if you leave the picture on for to long then it sets back to normal
+      function reapear() {
+        for (var i = 0; i < teachers.length; i++) {
+          document.getElementById(teachers[i]).style.display = "none";
+          document.getElementById(teachers[i] + "Pic").style.display = "inline";
+        }
+      }
+      //this loads the validate form for the onclick of the submit button
+      window.onload = function () {
+        document.getElementById("subButton").onclick = validateForm;
+      }
+      //this checks to make sure the form is valid
+      function validateForm() {
+        // this part checks to make sure the name section is filled and if it is not it uses a custom alert
+        var name = document.getElementById("name");
+        if (name.validity.valueMissing) {
+          name.setCustomValidity("Enter Your Name Please");
+        } else {
+          name.setCustomValidity("");
+        }
+        // this part checks to make sure the email section is filled and if it is not it uses a custom alert and if it is not a proper email then it give a different alert
+        var email = document.getElementById("email");
+        if (email.validity.valueMissing) {
+          email.setCustomValidity("Enter Your Email Please");
+        } else if (/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(email.value) === false) {
+          email.setCustomValidity("Enter a Valid Email Please");
+        } else {
+          email.setCustomValidity("");
+        }
+        // this part checks to make sure the message section is filled and if it is not it uses a custom alert
+        var message = document.getElementById("message");
+        if (message.validity.valueMissing) {
+          message.setCustomValidity("Enter Your Message Please");
+        } else {
+          message.setCustomValidity("");
+        }
+      }
+
+      var images = ["capstone_pics/aeroplane-aircraft-airplane-35854.jpg", "capstone_pics/abstract-air-cloud-36464.jpg",
+        "capstone_pics/aeroplane-air-aircraft-912050.jpg", "capstone_pics/aeroplane-air-aircraft-912050.jpg",
+        "capstone_pics/architectural-design-architecture-building-2071216.jpg"
+      ];
+
+      function slideImage() {
+        document.getElementById("img").src = images[Math.floor(Math.random() * 5)];
+      }
+      setTimeout(function () {
+        setInterval(slideImage, 8000);
+      }, 5000)
+    </script>
 
 </body>
 
