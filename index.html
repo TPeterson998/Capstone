@@ -64,8 +64,7 @@
   <!-- Image Header -->
   <!-- this is the image at the top and has some built in styles-->
   <div class="w3-display-container w3-animate-opacity">
-    <img class="img" src="capstone_pics/architectural-design-architecture-building-2071216.jpg" alt="boat"
-      style="width:100%;min-height:400px;max-height:700px; height: 700px" id="img">
+    <img class="img" src="" alt="boat" style="width:100%;min-height:400px;max-height:700px; height: 700px" id="img">
     <div class="w3-container w3-display-bottomleft w3-margin-bottom">
     </div>
 
@@ -268,6 +267,7 @@
     </footer>
     <!-- This is the script for the website -->
     <script>
+      window.addEventListener("load", startImg);
       // Script for side navigation
       // this script pives the side nav spacing and size
       function w3_open() {
@@ -354,18 +354,16 @@
           message.setCustomValidity("");
         }
       }
-
+      //this is all of the images that are going to be cycled through
       var images = ["capstone_pics/aeroplane-aircraft-airplane-35854.jpg", "capstone_pics/abstract-air-cloud-36464.jpg",
         "capstone_pics/aeroplane-air-aircraft-912050.jpg", "capstone_pics/aeroplane-air-aircraft-912050.jpg",
         "capstone_pics/architectural-design-architecture-building-2071216.jpg"
       ];
-
+      //This slides through the images at the top
       function slideImage() {
         document.getElementById("img").src = images[Math.floor(Math.random() * 5)];
       }
-      setTimeout(function () {
-        setInterval(slideImage, 8000);
-      }, 5000)
+      setInterval(slideImage, 8000);
     </script>
 
 </body>
