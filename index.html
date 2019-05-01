@@ -64,7 +64,8 @@
   <!-- Image Header -->
   <!-- this is the image at the top and has some built in styles-->
   <div class="w3-display-container w3-animate-opacity">
-    <img class="img" src="" alt="boat" style="width:100%;min-height:400px;max-height:700px; height: 700px" id="img">
+    <img class="img" src="capstone_pics/architectural-design-architecture-building-2071216.jpg" alt="boat"
+      style="width:100%;min-height:400px;max-height:700px; height: 700px" id="img">
     <div class="w3-container w3-display-bottomleft w3-margin-bottom">
     </div>
 
@@ -267,7 +268,6 @@
     </footer>
     <!-- This is the script for the website -->
     <script>
-      window.addEventListener("load", startImg);
       // Script for side navigation
       // this script pives the side nav spacing and size
       function w3_open() {
@@ -363,6 +363,8 @@
       function slideImage() {
         document.getElementById("img").src = images[Math.floor(Math.random() * 5)];
       }
+      //for some reason I couldn't get a onload to call this function in when the page actully loaded so there would be a gross border in the middle of nowhere for a couple seconds but when I call the function in right there then it works
+      slideImage();
       setInterval(slideImage, 8000);
     </script>
 
