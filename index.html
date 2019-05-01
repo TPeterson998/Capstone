@@ -356,10 +356,11 @@
       ];
 
       function slideImage() {
-        document.getElementById("img").setAttribute("src", )
+        document.getElementById("img").src = images[Math.floor(Math.random() * 5)];
       }
-
-      setInterval(slideImage, 10000)
+      setTimeout(function () {
+        setInterval(slideImage, 8000);
+      }, 5000)
     </script>
 
 </body>
