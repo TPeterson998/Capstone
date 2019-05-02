@@ -9,6 +9,9 @@
 
 //Function List
 //=============
+//containing the functions
+//variables
+//.getElementById
 
 // Script for side navigation
       // this script pives the side nav spacing and size
