@@ -2,12 +2,15 @@
 <html>
 
 <head>
+  <!-- these are the links that we used to call in the css that helps put the website together and to make it look better for the website 
+    Aviation program -->
   <title>West-Mec Aviation Matinence Technology</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- black image borders so that it can look cleaner, makes it look more together. Made in a style- the border of rgb black. -->
   <style>
     .img {
       border: 5px solid rgb(0, 0, 0);
@@ -39,7 +42,9 @@
   </nav>
 
   <!-- Navbar -->
-  <!-- this is the top nav bar that it formated using w3 style sheets. the nav allows jumps down the page -->
+  <!-- this is the top nav bar that it formated using w3 style sheets. the nav allows jumps down the page.
+    This is located at the top of the page above the home page. When you click on the part of the website that ypu want to go to 
+    then by clicking that it will bring you to the section thst you want. -->
   <div class="w3-top">
     <div class="w3-bar w3-theme-d2 w3-left-align">
       <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right  w3-theme-d2" href="javascript:void(0);"
@@ -52,7 +57,10 @@
     </div>
 
     <!-- Navbar on small screens -->
-    <!-- This uses the w3 style sheets to activate when the the screen is smaller to make the nav work better -->
+    <!-- This uses the w3 style sheets to activate when the the screen is smaller to make the nav work better. 
+      So on moblie this will be more convinient.The website is built so that if you are useing a small screen then 
+      the website will shrink in size to fit perfectly to your screen. The website will still operate the same just the 
+      size will be different. -->
     <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
       <a href="#team" class="w3-bar-item w3-button">Team</a>
       <a href="#work" class="w3-bar-item w3-button">Work</a>
@@ -62,59 +70,77 @@
   </div>
 
   <!-- Image Header -->
-  <!-- this is the image at the top and has some built in styles-->
+  <!-- this is the image at the top and has some built in the styles. The -->
+  <!-- the src has the link of the picture that is being used for that section. THe class is w3 display container. The style is for the correct 
+  width and height and the size. These styles are required for the picture to fit perfectly, so that it doesnt look stretched or too oversized.So that 
+it isnt blurry. It has a max and min height so that if the image isnt the exact size then it will go to those max capacities which would be 400px for min and 700px for the max height.-->
   <div class="w3-display-container w3-animate-opacity">
-    <img class="img" src="capstone_pics/architectural-design-architecture-building-2071216.jpg" alt="boat"
+    <img class="img" src="capstone_pics/architectural-design-architecture-building-2071216.jpg" 
       style="width:100%;min-height:400px;max-height:700px; height: 700px" id="img">
     <div class="w3-container w3-display-bottomleft w3-margin-bottom">
     </div>
 
     <!-- Team Container -->
-    <!-- This uses the w3 style sheets to center the next part of the page-->
+    <!--  The team container is  for the instructor teachers in the Aviation prgram. This is their section of the website.
+      This uses the w3 style sheets to center the next part of the page. The Id that is going to be used will be called team.-->
     <div class="w3-container w3-padding-64 w3-center" id="team">
       <h2>Instructors</h2>
       <p>Meet the team of Aviation Matinence Technology!</p>
 
       <div class="w3-row"><br>
-        <!-- this is all of the pictures and names of the teachers. Using the w3 style sheets they are separted into quarter and the picture are made into circles. There are also inline styles  -->
+        <!-- this is all of the pictures and names of the teachers. Using the w3 style sheets they are separted into quarter and the picture are made into circles. 
+          There are also inline styles  -->
+        <!-- teacher picture of Jay which it is saying his name and showing a piture with a time interval that when you click on his picture
+        it will show his occupation, what he does at he aviation program and his/her email, if the email cannot be retrieved then the west-mec email will be included. -->
         <div class="w3-quarter">
           <img id="jayPic" src="capstone_pics/Jay McDowell.jpg" alt="Boss" style="width:45%"
             class="w3-circle w3-hover-opacity img">
           <h3 id="jayTitle">Jay McDowell</h3>
-          <p style="display: none" id="jay">Jay McDowell teaches _______</p>
+          <p style="display: none" id="jay">Jay McDowell teaches _______. <a href="Jay.McDowell@west-mec.org">Jay.McDowell@west-mec.org</a></p>
         </div>
-
+<!-- teacher picture of Matthew saying his/her name and showing a piture of with the time interval design, that when you click on the image 
+  the picture that is flipped will last for 10 seconds. WHen the image is clicked the persons occupation will be showed along with what 
+  specific job the person teaches at the Aviation program. The persons email will be included in the time interval feature but if his/her email isnt 
+  able to be retrieved then the west-mec email will be put inplace. THe email and or the west-mec phone number-->
         <div class="w3-quarter">
           <img src="capstone_pics/Matthew Still.jpg" id="matthewPic" alt="Boss" style="width:45%"
             class="w3-circle w3-hover-opacity img">
           <h3 id="matthewTitle">Matthew Still</h3>
-          <p style="display: none" id="matthew">Matthew Still teaches _______</p>
+          <p style="display: none" id="matthew">Matthew Still teaches _______. <a href="matthew.still@west-mec.orgg">matthew.still@west-mec.org</a></p>
         </div>
-
+        <!-- teacher picture of Tama saying his/her name and showing a piture of with the time interval design, that when you click on the image 
+        the picture that is flipped will last for 10 seconds. WHen the image is clicked the persons occupation will be showed along with what 
+        specific job the person teaches at the program. The ersons email will be included in the time interval feature but if his/her email isnt 
+        able to be retrieved then the west-mec email will be put inplace; and or a phone number -->
         <div class="w3-quarter">
           <img src="capstone_pics/Tama Mohelnitzky.jpg" id="tamaPic" alt="Boss" style="width:45%"
             class="w3-circle w3-hover-opacity img">
           <h3 id="tamaTitle">Tama Mohelnitzky</h3>
-          <p style="display: none" id="tama">Tama Mohelnitzky teaches _______</p>
+          <p style="display: none" id="tama">Tama Mohelnitzky teaches _______. <a href="tama.mohelnitzky@west-mec.org">tama.mohelnitzky@west-mec.org</a></p>
         </div>
-
+        <!-- teacher picture of Terry Menees saying his/her name and showing a piture of with the time interval design, that when you click on the image 
+        the picture that is flipped will last for 10 seconds. WHen the image is clicked the persons occupation will be showed along with what 
+        specific job the person teaches at the program. The ersons email will be included in the time interval feature but if his/her email isnt 
+        able to be retrieved then the west-mec email will be put inplace; and or a west-mec phone number from the campus.-->
         <div class="w3-quarter">
           <img src="capstone_pics/Terry Menees.jpg" id="terryPic" alt="Boss" style="width:45%"
             class="w3-circle w3-hover-opacity img">
           <h3 id="terryTitle">Terry Menees</h3>
-          <p style="display: none" id="terry">Terry Menees teaches _________</p>
+          <p style="display: none" id="terry">Terry Menees teaches _________. <a href="Terry.Menees@west-mec.org">Terry.Menees@west-mec.org</a></p>
         </div>
 
       </div>
     </div>
 
-    <!-- Work Row -->
+    <!-- Work row-->
     <!-- This is the next part of the site that is foramted using the w3 stylesheets -->
+    <!-- This sort of explains to the reader of the website of what the person/ students will be doing and or learning in the aviation program. -->
     <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
       <!-- Useing the w3 style sheets this section of the page is divided into urters one for info the others for pictures -->
       <div class="w3-quarter">
         <h2>What you will be doing here</h2>
-        <!-- this is the info -->
+        <!-- this is the information that is provided telling and explaining to readers of what will be going on in the program. 
+          The duration of the program. Certificates and some awards that can be earned in the program. -->
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
           nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -126,42 +152,26 @@
       <!-- these are the pictures they have inline styles and use the w3 style sheets they also have the possibliltiy to have captions-->
       <div class="w3-quarter">
         <div class="w3-card w3-orange">
-          <img class="img" src="capstone_pics/AV_1.JPG" alt="Snow" style="width:100%">
+          <img class="img" src="capstone_pics/AV_1.JPG"  style="width:100%">
           <div class="w3-container">
-            <!-- <h3>Customer 1</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p> -->
           </div>
         </div>
       </div>
-
+      <!-- pic -->
       <div class="w3-quarter">
         <div class="w3-card w3-white">
-          <img class="img" src="capstone_pics/AV_11.JPG" alt="Lights" style="width:100%">
+          <img class="img" src="capstone_pics/AV_11.JPG"  style="width:100%">
           <div class="w3-container">
-            <!-- <h3>Customer 2</h3>
-  <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p> -->
+         
           </div>
         </div>
       </div>
-
+<!-- pic -->
       <div class="w3-quarter">
         <div class="w3-card w3-white">
-          <img class="img" src="capstone_pics/080418-F-1954M-906 (1).JPG" alt="Mountains" style="width:100%">
+          <img class="img" src="capstone_pics/080418-F-1954M-906 (1).JPG"  style="width:100%">
           <div class="w3-container">
-            <!-- <h3>Customer 3</h3> -->
-            <!-- <h4>Trade</h4>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p>
-  <p>Blablabla</p> -->
+           
           </div>
         </div>
       </div>
@@ -170,6 +180,8 @@
 
     <!-- Container -->
     <!-- This is the + sign that when clicked opens the side nav that was created above -->
+    <!-- in the side nav when you click the plus (+) sign what will pop up is extra documents and information that gives the 
+      user some extra useful information for the west-mec aviation program, the ability to apply for the program and some more information of west-mec itself. -->
     <div class="w3-container" style="position:relative">
       <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-orange"
         style="position:absolute;top:-28px;right:24px">+</a>
@@ -213,13 +225,16 @@
             Glendale, AZ 85307</p>
 
           <p><i class="fa fa-phone w3-text-orange w3-xlarge"></i> <b>623-209-8070</b></p>
-          <!-- This is an iframe holding a conection to google maps at the west mec central campus -->
+          <!-- This is an iframe holding a conection to google maps at the west mec central campus. 
+            The src of the link for the maps. THe user of the little map provided, you are able to see it fullscreen (optional) 
+            the map is made to be a sprecific size so that it fits in the container. With the map you can zoom in and see how to get there and such. It is linked with google maps.-->
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.6720330141225!2d-112.29502618479842!3d33.53591168074957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b41030b775f07%3A0xca01072481b6137d!2s6997+N+Glen+Harbor+Blvd%2C+Glendale%2C+AZ+85307!5e0!3m2!1sen!2sus!4v1554757023961!5m2!1sen!2sus"
             width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
 
         </div>
-        <!-- This is the form section of the contact page you can input your name, email, and your message. The form doesn't acttully send the info anywhere though -->
+        <!-- This is the form section of the contact page you can input your name, email, and your message. 
+          The form doesn't acttully send the info anywhere though, just for the effect, design-->
         <div class="w3-col m7">
           <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
             <div class="w3-section">
@@ -242,8 +257,7 @@
       </div>
     </div>
 
-    <!-- Image of location/map -->
-    <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;"> -->
+  
 
     <!-- Footer -->
     <!-- this is the footer It has links to several social media -->
@@ -266,108 +280,9 @@
             <i class="fa fa-chevron-circle-up"></i></span></a>
       </div>
     </footer>
-    <!-- This is the script for the website -->
-    <script>
-      // Script for side navigation
-      // this script pives the side nav spacing and size
-      function w3_open() {
-        var x = document.getElementById("mySidebar");
-        x.style.width = "300px";
-        x.style.paddingTop = "10%";
-        x.style.display = "block";
-      }
-
-      // Close side navigation
-      // This sets the display of the side nav to none so that it disapears
-      function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-      }
-
-      // Used to toggle the menu on smaller screens when clicking on the menu button
-      // This allows the top nav to be clicked open out of the nav picture while the screen is smaller
-      function openNav() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-        } else {
-          x.className = x.className.replace(" w3-show", "");
-        }
-      }
-      //this is an array of all of the teachers
-      var teachers = ["jay", "tama", "terry", "matthew"];
-      //using the array I can go through all of the id's witht he teachers name and the teachers pic and title
-      for (
-        let /* Jedi helped me with this if you use a var then the [i] can't get the scope of the anonymous functions if you use let then it can*/
-          i = 0; i < teachers.length; i++) {
-        //This on click make it so you can click the pictures and make the text appear and makeit so that the pictures reappear in 10 sec if you don't click it again
-        document.getElementById(teachers[i] + "Pic").onclick = function () {
-          document.getElementById(teachers[i] + "Pic").style.display = "none";
-          document.getElementById(teachers[i]).style.display = "inline";
-          setTimeout(reapear, 10000);
-        }
-        //This on click make it so you can click the text to make the pictures reapear 
-        document.getElementById(teachers[i]).onclick = function () {
-          document.getElementById(teachers[i]).style.display = "none";
-          document.getElementById(teachers[i] + "Pic").style.display = "inline";
-        }
-        //this make it so you can click the title so the pictures reapear
-        document.getElementById(teachers[i] + "Title").onclick = function () {
-          document.getElementById(teachers[i]).style.display = "none";
-          document.getElementById(teachers[i] + "Pic").style.display = "inline";
-        }
-      }
-
-      //this makes it so if you leave the picture on for to long then it sets back to normal
-      function reapear() {
-        for (var i = 0; i < teachers.length; i++) {
-          document.getElementById(teachers[i]).style.display = "none";
-          document.getElementById(teachers[i] + "Pic").style.display = "inline";
-        }
-      }
-      //this loads the validate form for the onclick of the submit button
-      window.onload = function () {
-        document.getElementById("subButton").onclick = validateForm;
-      }
-      //this checks to make sure the form is valid
-      function validateForm() {
-        // this part checks to make sure the name section is filled and if it is not it uses a custom alert
-        var name = document.getElementById("name");
-        if (name.validity.valueMissing) {
-          name.setCustomValidity("Enter Your Name Please");
-        } else {
-          name.setCustomValidity("");
-        }
-        // this part checks to make sure the email section is filled and if it is not it uses a custom alert and if it is not a proper email then it give a different alert
-        var email = document.getElementById("email");
-        if (email.validity.valueMissing) {
-          email.setCustomValidity("Enter Your Email Please");
-        } else if (/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(email.value) === false) {
-          email.setCustomValidity("Enter a Valid Email Please");
-        } else {
-          email.setCustomValidity("");
-        }
-        // this part checks to make sure the message section is filled and if it is not it uses a custom alert
-        var message = document.getElementById("message");
-        if (message.validity.valueMissing) {
-          message.setCustomValidity("Enter Your Message Please");
-        } else {
-          message.setCustomValidity("");
-        }
-      }
-      //this is all of the images that are going to be cycled through
-      var images = ["capstone_pics/aeroplane-aircraft-airplane-35854.jpg", "capstone_pics/abstract-air-cloud-36464.jpg",
-        "capstone_pics/aeroplane-air-aircraft-912050.jpg", "capstone_pics/aeroplane-air-aircraft-912050.jpg",
-        "capstone_pics/architectural-design-architecture-building-2071216.jpg"
-      ];
-      //This slides through the images at the top
-      function slideImage() {
-        document.getElementById("img").src = images[Math.floor(Math.random() * 5)];
-      }
-      //for some reason I couldn't get a onload to call this function in when the page actully loaded so there would be a gross border in the middle of nowhere for a couple seconds but when I call the function in right there then it works
-      slideImage();
-      setInterval(slideImage, 8000);
-    </script>
-
+    <!-- this is the script for the javascript file. The src is calling the file,so that the code done in the js file will mesh with the 
+      //html.it is being called in async. -->
+  <script src="custom.js" async></script>
 </body>
 
 </html>
