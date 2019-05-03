@@ -7,13 +7,16 @@
   <title>West-Mec Aviation Matinence Technology</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css"/>     
+  <!-- the link to the styles css -->
+  <link rel="stylesheet" href="theme.css"/>
+  <!-- the link to the theme css -->
+  <link rel="stylesheet" href="iconsfonts.css"/>
+  <!-- the link to the fonts css -->
   <!-- black image borders so that it can look cleaner, makes it look more together. Made in a style- the border of rgb black. -->
   <style>
-    .img {
-      border: 5px solid rgb(0, 0, 0);
+    .pic {
+      border: 6px solid rgb(233, 117, 22);
     }
   </style>
 </head>
@@ -30,6 +33,8 @@
       <i class="fa fa-remove"></i>
     </a>
     <!-- These are the links that are in the side nav -->
+    <!-- these are for the side nav the +plus. that includes the links for the program info, the application, 
+      about the skillsUSA, he scope, outside files, and west-mec. -->
     <a href="https://west-mec.edu/wp-content/uploads/2018/04/869_AVIATION_MAINTENANCE_TECHNOLOGY_SS.pdf"
       class="w3-bar-item w3-button">Scope</a>
     <a href="https://drive.google.com/file/d/1jtJiE_NkxZ0pFgI0V6Aw_DZONvPNfxAO/view"
@@ -75,7 +80,7 @@
   width and height and the size. These styles are required for the picture to fit perfectly, so that it doesnt look stretched or too oversized.So that 
 it isnt blurry. It has a max and min height so that if the image isnt the exact size then it will go to those max capacities which would be 400px for min and 700px for the max height.-->
   <div class="w3-display-container w3-animate-opacity">
-    <img class="img" src="capstone_pics/architectural-design-architecture-building-2071216.jpg" 
+    <img class="img" src="capstone_pics/architectural-design-architecture-building-2071216.jpg"
       style="width:100%;min-height:400px;max-height:700px; height: 700px" id="img">
     <div class="w3-container w3-display-bottomleft w3-margin-bottom">
     </div>
@@ -93,40 +98,44 @@ it isnt blurry. It has a max and min height so that if the image isnt the exact 
         <!-- teacher picture of Jay which it is saying his name and showing a piture with a time interval that when you click on his picture
         it will show his occupation, what he does at he aviation program and his/her email, if the email cannot be retrieved then the west-mec email will be included. -->
         <div class="w3-quarter">
-          <img id="jayPic" src="capstone_pics/Jay McDowell.jpg" alt="Boss" style="width:45%"
+          <img id="jayPic" src="capstone_pics/Jay McDowell.jpg"  style="width:45%"
             class="w3-circle w3-hover-opacity img">
           <h3 id="jayTitle">Jay McDowell</h3>
-          <p style="display: none" id="jay">Jay McDowell teaches _______. <a href="Jay.McDowell@west-mec.org">Jay.McDowell@west-mec.org</a></p>
+          <p style="display: none" id="jay">Jay McDowell teaches _______. <a
+              href="Jay.McDowell@west-mec.org">Jay.McDowell@west-mec.org</a></p>
         </div>
-<!-- teacher picture of Matthew saying his/her name and showing a piture of with the time interval design, that when you click on the image 
+        <!-- teacher picture of Matthew saying his/her name and showing a piture of with the time interval design, that when you click on the image 
   the picture that is flipped will last for 10 seconds. WHen the image is clicked the persons occupation will be showed along with what 
   specific job the person teaches at the Aviation program. The persons email will be included in the time interval feature but if his/her email isnt 
   able to be retrieved then the west-mec email will be put inplace. THe email and or the west-mec phone number-->
         <div class="w3-quarter">
-          <img src="capstone_pics/Matthew Still.jpg" id="matthewPic" alt="Boss" style="width:45%"
+          <img src="capstone_pics/Matthew Still.jpg" id="matthewPic"  style="width:45%"
             class="w3-circle w3-hover-opacity img">
           <h3 id="matthewTitle">Matthew Still</h3>
-          <p style="display: none" id="matthew">Matthew Still teaches _______. <a href="matthew.still@west-mec.orgg">matthew.still@west-mec.org</a></p>
+          <p style="display: none" id="matthew">Matthew Still teaches _______. <a
+              href="matthew.still@west-mec.orgg">matthew.still@west-mec.org</a></p>
         </div>
         <!-- teacher picture of Tama saying his/her name and showing a piture of with the time interval design, that when you click on the image 
         the picture that is flipped will last for 10 seconds. WHen the image is clicked the persons occupation will be showed along with what 
         specific job the person teaches at the program. The ersons email will be included in the time interval feature but if his/her email isnt 
         able to be retrieved then the west-mec email will be put inplace; and or a phone number -->
         <div class="w3-quarter">
-          <img src="capstone_pics/Tama Mohelnitzky.jpg" id="tamaPic" alt="Boss" style="width:45%"
+          <img src="capstone_pics/Tama Mohelnitzky.jpg" id="tamaPic"  style="width:45%"
             class="w3-circle w3-hover-opacity img">
           <h3 id="tamaTitle">Tama Mohelnitzky</h3>
-          <p style="display: none" id="tama">Tama Mohelnitzky teaches _______. <a href="tama.mohelnitzky@west-mec.org">tama.mohelnitzky@west-mec.org</a></p>
+          <p style="display: none" id="tama">Tama Mohelnitzky teaches _______. <a
+              href="tama.mohelnitzky@west-mec.org">tama.mohelnitzky@west-mec.org</a></p>
         </div>
         <!-- teacher picture of Terry Menees saying his/her name and showing a piture of with the time interval design, that when you click on the image 
         the picture that is flipped will last for 10 seconds. WHen the image is clicked the persons occupation will be showed along with what 
         specific job the person teaches at the program. The ersons email will be included in the time interval feature but if his/her email isnt 
         able to be retrieved then the west-mec email will be put inplace; and or a west-mec phone number from the campus.-->
         <div class="w3-quarter">
-          <img src="capstone_pics/Terry Menees.jpg" id="terryPic" alt="Boss" style="width:45%"
+          <img src="capstone_pics/Terry Menees.jpg" id="terryPic"  style="width:45%"
             class="w3-circle w3-hover-opacity img">
           <h3 id="terryTitle">Terry Menees</h3>
-          <p style="display: none" id="terry">Terry Menees teaches _________. <a href="Terry.Menees@west-mec.org">Terry.Menees@west-mec.org</a></p>
+          <p style="display: none" id="terry">Terry Menees teaches _________. <a
+              href="Terry.Menees@west-mec.org">Terry.Menees@west-mec.org</a></p>
         </div>
 
       </div>
@@ -138,7 +147,7 @@ it isnt blurry. It has a max and min height so that if the image isnt the exact 
     <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
       <!-- Useing the w3 style sheets this section of the page is divided into urters one for info the others for pictures -->
       <div class="w3-quarter">
-        <h2>What you will be doing here</h2>
+        <h2>What to expect</h2>
         <!-- this is the information that is provided telling and explaining to readers of what will be going on in the program. 
           The duration of the program. Certificates and some awards that can be earned in the program. -->
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -150,28 +159,30 @@ it isnt blurry. It has a max and min height so that if the image isnt the exact 
           laborum.</p>
       </div>
       <!-- these are the pictures they have inline styles and use the w3 style sheets they also have the possibliltiy to have captions-->
+      <!-- all three ofthese pictures are for the what to expect container. Pictures of the program of aviation. 
+        they just show examples of what the students will be doing there. -->
       <div class="w3-quarter">
         <div class="w3-card w3-orange">
-          <img class="img" src="capstone_pics/AV_1.JPG"  style="width:100%">
+          <img class="pic" src="capstone_pics/AV_1.JPG"  style="width:100%">
           <div class="w3-container">
           </div>
         </div>
       </div>
-      <!-- pic -->
+      <!-- pic2 -->
       <div class="w3-quarter">
         <div class="w3-card w3-white">
-          <img class="img" src="capstone_pics/AV_11.JPG"  style="width:100%">
+          <img class="pic" src="capstone_pics/080418-F-1954M-906 (1).JPG"  style="width:100%">
           <div class="w3-container">
-         
+
           </div>
         </div>
       </div>
-<!-- pic -->
+<!-- pic3 -->
       <div class="w3-quarter">
         <div class="w3-card w3-white">
-          <img class="img" src="capstone_pics/080418-F-1954M-906 (1).JPG"  style="width:100%">
+          <img class="pic" src="capstone_pics/AV_11.JPG"  style="width:100%">
           <div class="w3-container">
-           
+
           </div>
         </div>
       </div>
@@ -257,7 +268,7 @@ it isnt blurry. It has a max and min height so that if the image isnt the exact 
       </div>
     </div>
 
-  
+
 
     <!-- Footer -->
     <!-- this is the footer It has links to several social media -->
@@ -282,7 +293,7 @@ it isnt blurry. It has a max and min height so that if the image isnt the exact 
     </footer>
     <!-- this is the script for the javascript file. The src is calling the file,so that the code done in the js file will mesh with the 
       //html.it is being called in async. -->
-  <script src="custom.js" async></script>
+    <script src="custom.js" async></script>
 </body>
 
 </html>
