@@ -1,4 +1,4 @@
-/* W3.CSS 4.12 November 2018 by Jan Egil and Borge Refsnes */
+/* css */
 html {
     box-sizing: border-box
 }
@@ -9,7 +9,7 @@ html {
     box-sizing: inherit
 }
 
-/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+/* html */
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
