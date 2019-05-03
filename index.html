@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="theme.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="cloudFlare-fonts.css">
   <!-- black image borders so that it can look cleaner, makes it look more together. Made in a style- the border of rgb black. -->
   <style>
     .pic {
@@ -22,38 +22,36 @@
 
   <!-- Sidebar on click -->
   <!-- This uses w3 style sheets to make it so that when you click on the + sign on the right it will open a nav bar on the side with links to many different places with info -->
-  <nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2"
-    id="mySidebar">
+  <nav class="sidebar bar-block white card animate-left xxlarge" style="display:none;z-index:2" id="mySidebar">
     <h1>OutSide Files</h1>
-    <a href="javascript:void(0)" onclick="w3_close()"
-      class="w3-bar-item w3-button w3-display-topright w3-text-orange">Close
+    <a href="javascript:void(0)" onclick="w3_close()" class="bar-item button display-topright text-orange">Close
       <i class="fa fa-remove"></i>
     </a>
     <!-- These are the links that are in the side nav -->
     <a href="https://west-mec.edu/wp-content/uploads/2018/04/869_AVIATION_MAINTENANCE_TECHNOLOGY_SS.pdf"
-      class="w3-bar-item w3-button">Scope</a>
-    <a href="https://drive.google.com/file/d/1jtJiE_NkxZ0pFgI0V6Aw_DZONvPNfxAO/view"
-      class="w3-bar-item w3-button">Program Info</a>
+      class="bar-item button">Scope</a>
+    <a href="https://drive.google.com/file/d/1jtJiE_NkxZ0pFgI0V6Aw_DZONvPNfxAO/view" class="bar-item button">Program
+      Info</a>
     <a href="https://system.west-mec.org/application/admin_login.php?ReturnPage=application/admin_index.php"
-      class="w3-bar-item w3-button">Apply</a>
-    <a href="https://west-mec.edu/" class="w3-bar-item w3-button">West-Mec</a>
+      class="bar-item button">Apply</a>
+    <a href="https://west-mec.edu/" class="bar-item button">West-Mec</a>
     <a href="https://www.skillsusa.org/?gclid=EAIaIQobChMI1aLF1qDs4QIVYhh9Ch006gqKEAAYASAAEgLrlvD_BwE"
-      class="w3-bar-item w3-button">Skills USA</a>
+      class="bar-item button">Skills USA</a>
   </nav>
 
   <!-- Navbar -->
   <!-- this is the top nav bar that it formated using w3 style sheets. the nav allows jumps down the page.
     This is located at the top of the page above the home page. When you click on the part of the website that ypu want to go to 
     then by clicking that it will bring you to the section thst you want. -->
-  <div class="w3-top">
-    <div class="w3-bar w3-theme-d2 w3-left-align">
-      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right  w3-theme-d2" href="javascript:void(0);"
+  <div class="top">
+    <div class="bar theme-d2 left-align">
+      <a class="bar-item button hide-medium hide-large right  theme-d2" href="javascript:void(0);"
         onclick="openNav()"><i class="fa fa-bars"></i></a>
-      <a href="#" class="w3-bar-item w3-button w3-orange"><i class="fa fa-home w3-margin-right"></i>Home</a>
-      <a href="#team" class="w3-bar-item w3-button w3-hide-small ">Team</a>
-      <a href="#work" class="w3-bar-item w3-button w3-hide-small ">Work</a>
-      <a href="#ctso" class="w3-bar-item w3-button w3-hide-small ">CTSO</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-hide-small ">Contact</a>
+      <a href="#" class="bar-item button orange"><i class="fa fa-home margin-right"></i>Home</a>
+      <a href="#team" class="bar-item button hide-small ">Team</a>
+      <a href="#work" class="bar-item button hide-small ">About</a>
+      <a href="#ctso" class="bar-item button hide-small ">CTSO</a>
+      <a href="#contact" class="bar-item button hide-small ">Contact</a>
     </div>
 
     <!-- Navbar on small screens -->
@@ -61,11 +59,11 @@
       So on moblie this will be more convinient.The website is built so that if you are useing a small screen then 
       the website will shrink in size to fit perfectly to your screen. The website will still operate the same just the 
       size will be different. -->
-    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-      <a href="#team" class="w3-bar-item w3-button">Team</a>
-      <a href="#work" class="w3-bar-item w3-button">Work</a>
-      <a href="#ctso" class="w3-bar-item w3-button">CTSO</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <div id="navDemo" class="bar-block theme-d2 hide hide-large hide-medium">
+      <a href="#team" class="bar-item button">Team</a>
+      <a href="#work" class="bar-item button">About</a>
+      <a href="#ctso" class="bar-item button">CTSO</a>
+      <a href="#contact" class="bar-item button">Contact</a>
     </div>
   </div>
 
@@ -74,62 +72,58 @@
   <!-- the src has the link of the picture that is being used for that section. THe class is w3 display container. The style is for the correct 
   width and height and the size. These styles are required for the picture to fit perfectly, so that it doesnt look stretched or too oversized.So that 
 it isnt blurry. It has a max and min height so that if the image isnt the exact size then it will go to those max capacities which would be 400px for min and 700px for the max height.-->
-  <div class="w3-display-container w3-animate-opacity">
+  <div class="display-container animate-opacity">
     <img class="img" src="capstone_pics/architectural-design-architecture-building-2071216.jpg"
       style="width:100%;min-height:400px;max-height:700px; height: 700px" id="img">
-    <div class="w3-container w3-display-bottomleft w3-margin-bottom">
+    <div class="container display-bottomleft margin-bottom">
     </div>
 
     <!-- Team Container -->
     <!--  The team container is  for the instructor teachers in the Aviation prgram. This is their section of the website.
       This uses the w3 style sheets to center the next part of the page. The Id that is going to be used will be called team.-->
-    <div class="w3-container w3-padding-64 w3-center" id="team">
+    <div class="container padding-64 center" id="team">
       <h2>Instructors</h2>
       <p>Meet the team of Aviation Matinence Technology!</p>
 
-      <div class="w3-row"><br>
+      <div class="row"><br>
         <!-- this is all of the pictures and names of the teachers. Using the w3 style sheets they are separted into quarter and the picture are made into circles. 
           There are also inline styles  -->
         <!-- teacher picture of Jay which it is saying his name and showing a piture with a time interval that when you click on his picture
         it will show his occupation, what he does at he aviation program and his/her email, if the email cannot be retrieved then the west-mec email will be included. -->
-        <div class="w3-quarter">
-          <img id="jayPic" src="capstone_pics/Jay McDowell.jpg" style="width:45%"
-            class="w3-circle w3-hover-opacity img">
+        <div class="quarter">
+          <img id="jayPic" src="capstone_pics/Jay McDowell.jpg" style="width:45%" class="circle hover-opacity img">
           <h3 id="jayTitle">Jay McDowell</h3>
-          <p style="display: none" id="jay">Jay McDowell teaches _______. <a
+          <p style="display: none" id="jay">Jay McDowell teaches first year students. <a
               href="Jay.McDowell@west-mec.org">Jay.McDowell@west-mec.org</a></p>
         </div>
         <!-- teacher picture of Matthew saying his/her name and showing a piture of with the time interval design, that when you click on the image 
   the picture that is flipped will last for 10 seconds. WHen the image is clicked the persons occupation will be showed along with what 
   specific job the person teaches at the Aviation program. The persons email will be included in the time interval feature but if his/her email isnt 
   able to be retrieved then the west-mec email will be put inplace. THe email and or the west-mec phone number-->
-        <div class="w3-quarter">
-          <img src="capstone_pics/Matthew Still.jpg" id="matthewPic" style="width:45%"
-            class="w3-circle w3-hover-opacity img">
+        <div class="quarter">
+          <img src="capstone_pics/Matthew Still.jpg" id="matthewPic" style="width:45%" class="circle hover-opacity img">
           <h3 id="matthewTitle">Matthew Still</h3>
-          <p style="display: none" id="matthew">Matthew Still teaches _______. <a
+          <p style="display: none" id="matthew">Matthew Still teaches first year students. <a
               href="matthew.still@west-mec.orgg">matthew.still@west-mec.org</a></p>
         </div>
         <!-- teacher picture of Tama saying his/her name and showing a piture of with the time interval design, that when you click on the image 
         the picture that is flipped will last for 10 seconds. WHen the image is clicked the persons occupation will be showed along with what 
         specific job the person teaches at the program. The ersons email will be included in the time interval feature but if his/her email isnt 
         able to be retrieved then the west-mec email will be put inplace; and or a phone number -->
-        <div class="w3-quarter">
-          <img src="capstone_pics/Tama Mohelnitzky.jpg" id="tamaPic" style="width:45%"
-            class="w3-circle w3-hover-opacity img">
+        <div class="quarter">
+          <img src="capstone_pics/Tama Mohelnitzky.jpg" id="tamaPic" style="width:45%" class="circle hover-opacity img">
           <h3 id="tamaTitle">Tama Mohelnitzky</h3>
-          <p style="display: none" id="tama">Tama Mohelnitzky teaches _______. <a
+          <p style="display: none" id="tama">Tama Mohelnitzky teaches second year students. <a
               href="tama.mohelnitzky@west-mec.org">tama.mohelnitzky@west-mec.org</a></p>
         </div>
         <!-- teacher picture of Terry Menees saying his/her name and showing a piture of with the time interval design, that when you click on the image 
         the picture that is flipped will last for 10 seconds. WHen the image is clicked the persons occupation will be showed along with what 
         specific job the person teaches at the program. The ersons email will be included in the time interval feature but if his/her email isnt 
         able to be retrieved then the west-mec email will be put inplace; and or a west-mec phone number from the campus.-->
-        <div class="w3-quarter">
-          <img src="capstone_pics/Terry Menees.jpg" id="terryPic" style="width:45%"
-            class="w3-circle w3-hover-opacity img">
+        <div class="quarter">
+          <img src="capstone_pics/Terry Menees.jpg" id="terryPic" style="width:45%" class="circle hover-opacity img">
           <h3 id="terryTitle">Terry Menees</h3>
-          <p style="display: none" id="terry">Terry Menees teaches _________. <a
+          <p style="display: none" id="terry">Terry Menees teaches second year students. <a
               href="Terry.Menees@west-mec.org">Terry.Menees@west-mec.org</a></p>
         </div>
 
@@ -139,42 +133,43 @@ it isnt blurry. It has a max and min height so that if the image isnt the exact 
     <!-- Work row-->
     <!-- This is the next part of the site that is foramted using the w3 stylesheets -->
     <!-- This sort of explains to the reader of the website of what the person/ students will be doing and or learning in the aviation program. -->
-    <div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+    <div class="row-padding padding-64 theme-l1" id="work">
       <!-- Useing the w3 style sheets this section of the page is divided into urters one for info the others for pictures -->
-      <div class="w3-quarter">
-        <h2>What you will be doing here</h2>
+      <div class="quarter">
+        <h2>About</h2>
         <!-- this is the information that is provided telling and explaining to readers of what will be going on in the program. 
           The duration of the program. Certificates and some awards that can be earned in the program. -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore
-          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est
-          laborum.</p>
+        <p>The West-Mec Aviation Maintenance program is not only a 147 aviation school but also a Federal Aviation
+          Administration(FAA) goverened school. This
+          means that all of the hours included are manditory and nessesary for completion. Here at West-Mec Aviation we
+          train the next generation of students to have the skills to be successfull Airframe technicians, powerplant
+          technicians, air
+          transportation
+          technicians. The skills the are taught are not limited to these careers are can be used in many other trades.
+        </p>
       </div>
       <!-- these are the pictures they have inline styles and use the w3 style sheets they also have the possibliltiy to have captions-->
-      <div class="w3-quarter">
-        <div class="w3-card w3-orange">
+      <div class="quarter">
+        <div class="card orange">
           <img class="pic" src="capstone_pics/AV_1.JPG" style="width:100%">
-          <div class="w3-container">
+          <div class="container">
           </div>
         </div>
       </div>
       <!-- pic -->
-      <div class="w3-quarter">
-        <div class="w3-card w3-white">
+      <div class="quarter">
+        <div class="card white">
           <img class="pic" src="capstone_pics/AV_11.JPG" style="width:100%">
-          <div class="w3-container">
+          <div class="container">
 
           </div>
         </div>
       </div>
       <!-- pic -->
-      <div class="w3-quarter">
-        <div class="w3-card w3-white">
+      <div class="quarter">
+        <div class="card white">
           <img class="pic" src="capstone_pics/080418-F-1954M-906 (1).JPG" style="width:100%">
-          <div class="w3-container">
+          <div class="container">
 
           </div>
         </div>
@@ -186,28 +181,28 @@ it isnt blurry. It has a max and min height so that if the image isnt the exact 
     <!-- This is the + sign that when clicked opens the side nav that was created above -->
     <!-- in the side nav when you click the plus (+) sign what will pop up is extra documents and information that gives the 
       user some extra useful information for the west-mec aviation program, the ability to apply for the program and some more information of west-mec itself. -->
-    <div class="w3-container" style="position:relative">
-      <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-orange"
-        style="position:absolute;top:-28px;right:24px">+</a>
+    <div class="container" style="position:relative">
+      <a onclick="w3_open()" class="button xlarge circle orange" style="position:absolute;top:-28px;right:24px">+</a>
     </div>
 
     <!-- CTSO Row -->
     <!-- This is the CTSO section of the page. Using the W3 style sheets this section of the page is formated -->
-    <div class="w3-row-padding w3-center w3-padding-64" id="ctso">
+    <div class="row-padding center padding-64" id="ctso">
       <h1>CTSO</h1>
       <!-- using the w3 style sheets this section of the page is split into thirds with two thirds of it text with a picture spliting them -->
-      <div class="w3-third">
+      <div class="third">
         <p>Our CTSO is SkillsUSA. SkillsUSA is a partnership of students, teachers and industry working together to
           ensure America has a skilled workforce. Their main goal is to help students excel. SkillsUSA serves more than
           360,000 students and instructors annually. SKillsUSA has served more than 13.5 million members since 1965. Our
-          local chapter ......
+          local chapter has won 1st, 2nd, and 8th in nationals in the past three years. Also we win 1st, 2nd, and 3rd in
+          state every year.
         </p>
       </div>
-      <div class="w3-third">
+      <div class="third">
         <!-- this is the picture it has some inline style -->
         <img src="capstone_pics/skillsUSA.png" id="skillUsa" alt="Skills USA" style="width:100%;">
       </div>
-      <div class="w3-third">
+      <div class="third">
         <p>SkillsUSA focuses on building the three framework skills which are Technical, Personal, and Workplace. This
           framework provides a common language for students to articulate what they gain from SkillsUSA to possible
           employers. It allows students to assesses thier develpment in the skills they learn. It empowers students to
@@ -218,17 +213,17 @@ it isnt blurry. It has a max and min height so that if the image isnt the exact 
 
     <!-- Contact Container -->
     <!-- this is the contact section of the sheet. This section of the site is formated using the W3 style sheets-->
-    <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-      <div class="w3-row">
-        <div class="w3-col m5">
-          <div class="w3-padding-16"><span class="w3-xlarge w3-border-orange w3-bottombar">Contact </span></div>
+    <div class="container padding-64 theme-l1" id="contact">
+      <div class="row">
+        <div class="col m5">
+          <div class="padding-16"><span class="xlarge border-orange bottombar">Contact </span></div>
           <h3>Address</h3>
 
-          <p><i class="fa fa-map-marker w3-text-orange w3-xlarge"></i> <b>Central Campus :</b>  6997 N. Glen Harbor
+          <p><i class="fa fa-map-marker text-orange xlarge"></i> <b>Central Campus :</b>  6997 N. Glen Harbor
             Boulevard
             Glendale, AZ 85307</p>
 
-          <p><i class="fa fa-phone w3-text-orange w3-xlarge"></i> <b>623-209-8070</b></p>
+          <p><i class="fa fa-phone text-orange xlarge"></i> <b>623-209-8070</b></p>
           <!-- This is an iframe holding a conection to google maps at the west mec central campus. 
             The src of the link for the maps. THe user of the little map provided, you are able to see it fullscreen (optional) 
             the map is made to be a sprecific size so that it fits in the container. With the map you can zoom in and see how to get there and such. It is linked with google maps.-->
@@ -239,23 +234,23 @@ it isnt blurry. It has a max and min height so that if the image isnt the exact 
         </div>
         <!-- This is the form section of the contact page you can input your name, email, and your message. 
           The form doesn't acttully send the info anywhere though, just for the effect, design-->
-        <div class="w3-col m7">
-          <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-            <div class="w3-section">
+        <div class="col m7">
+          <form class="container card-4 padding-16 white" action="/action_page.php" target="_blank">
+            <div class="section">
               <label>Name</label>
-              <input class="w3-input" type="text" name="Name" id="name" required>
+              <input class="input" type="text" name="Name" id="name" required>
             </div>
-            <div class="w3-section">
+            <div class="section">
               <label>Email</label>
-              <input class="w3-input" type="text" name="Email" id="email" required>
+              <input class="input" type="text" name="Email" id="email" required>
             </div>
-            <div class="w3-section">
+            <div class="section">
               <label>Message</label>
-              <input class="w3-input" type="text" name="Message" id="message" required>
+              <input class="input" type="text" name="Message" id="message" required>
 
             </div>
             <!-- This is the submit button -->
-            <button id="subButton" type="submit" class="w3-button w3-right w3-theme">Send</button>
+            <button id="subButton" type="submit" class="button right theme">Send</button>
           </form>
         </div>
       </div>
@@ -265,22 +260,18 @@ it isnt blurry. It has a max and min height so that if the image isnt the exact 
 
     <!-- Footer -->
     <!-- this is the footer It has links to several social media -->
-    <footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+    <footer class="container padding-32 theme-d1 center">
       <h4>Follow Us</h4>
-      <a class="w3-button w3-large w3-orange" href="javascript:void(0)" title="Facebook"><i
-          class="fa fa-facebook"></i></a>
-      <a class="w3-button w3-large w3-orange" href="javascript:void(0)" title="Twitter"><i
-          class="fa fa-twitter"></i></a>
-      <a class="w3-button w3-large w3-orange" href="javascript:void(0)" title="Google +"><i
-          class="fa fa-google-plus"></i></a>
-      <a class="w3-button w3-large w3-orange" href="javascript:void(0)" title="Google +"><i
-          class="fa fa-instagram"></i></a>
-      <a class="w3-button w3-large w3-orange w3-hide-small" href="javascript:void(0)" title="Linkedin"><i
+      <a class="button large orange" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+      <a class="button large orange" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+      <a class="button large orange" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+      <a class="button large orange" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+      <a class="button large orange hide-small" href="javascript:void(0)" title="Linkedin"><i
           class="fa fa-linkedin"></i></a>
       <!-- This is the setion that send you to te top of the page -->
-      <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-        <span class="w3-text w3-padding w3-orange w3-hide-small">Go To Top</span>
-        <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+      <div style="position:relative;bottom:100px;z-index:1;" class="tooltip right">
+        <span class="text padding orange hide-small">Go To Top</span>
+        <a class="button theme" href="#myPage"><span class="xlarge">
             <i class="fa fa-chevron-circle-up"></i></span></a>
       </div>
     </footer>

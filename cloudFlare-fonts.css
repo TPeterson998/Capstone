@@ -1,6 +1,6 @@
 /*!
-   Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
-   License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
 @font-face {
     font-family: 'FontAwesome';
@@ -19,73 +19,37 @@
     -moz-osx-font-smoothing: grayscale
 }
 
-@-webkit-keyframes fa-spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
-
-    100% {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg)
-    }
+.fa-lg {
+    font-size: 1.33333333em;
+    line-height: .75em;
+    vertical-align: -15%
 }
 
-@keyframes fa-spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
-
-    100% {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg)
-    }
+.fa-2x {
+    font-size: 2em
 }
 
-.fa-remove:before,
-    {
-    content: "\f00d"
+.fa-3x {
+    font-size: 3em
 }
 
-.fa-bars:before {
-    content: "\f0c9"
+.fa-4x {
+    font-size: 4em
 }
 
-.fa-home:before {
-    content: "\f015"
+.fa-5x {
+    font-size: 5em
 }
 
-.fa-map-marker:before {
-    content: "\f041"
+.fa-fw {
+    width: 1.28571429em;
+    text-align: center
 }
 
-.fa-phone:before {
-    content: "\f095"
-}
-
-.fa-facebook:before {
-    content: "\f09a"
-}
-
-.fa-twitter:before {
-    content: "\f099"
-}
-
-.fa-google-plus:before {
-    content: "\f0d5"
-}
-
-.fa-instagram:before {
-    content: "\f16d"
-}
-
-.fa-linkedin:before {
-    content: "\f0e1"
-}
-
-.fa-chevron-circle-up:before {
-    content: "\f139"
+.fa-ul {
+    padding-left: 0;
+    margin-left: 2.14285714em;
+    list-style-type: none
 }
 
 .fa-ul>li {
