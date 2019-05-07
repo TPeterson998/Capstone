@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="theme.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="icon.css" />
   <!-- orange image borders so that it can look cleaner, makes it look more together. Made in a style- the border of rgb. -->
   <style>
     .pic {
@@ -45,7 +45,7 @@
     then by clicking that it will bring you to the section thst you want. -->
   <div class="top">
     <div class="bar theme-d2 left-align">
-      <a class="bar-item button hide-medium hide-large right theme-d2" href="javascript:void(0);" onclick="openNav()"><i
+      <a class="bar-item button hide-medium hide-large right theme-d2" id="navIcon" onclick="openNav()"><i
           class="fa fa-bars"></i></a>
       <a href="#" class="bar-item button orange"><i class="fa fa-home margin-right"></i>Home</a>
       <a href="#team" class="bar-item button hide-small ">Team</a>
@@ -59,7 +59,7 @@
       So on moblie this will be more convinient.The website is built so that if you are useing a small screen then 
       the website will shrink in size to fit perfectly to your screen. The website will still operate the same just the 
       size will be different. -->
-    <div id="navDemo" class="bar-block theme-d2 hide hide-large hide-medium">
+    <div id="navSmall" class="bar-block theme-d2 hide hide-large hide-medium">
       <a href="#team" class="bar-item button">Team</a>
       <a href="#work" class="bar-item button">About</a>
       <a href="#ctso" class="bar-item button">CTSO</a>
@@ -216,13 +216,12 @@ it isnt blurry. It has a max and min height so that if the image isnt the exact 
     <div class="container padding-64 theme-l1" id="contact">
       <div class="row">
         <div class="col m5">
-          <div class="padding-16"><span class="xlarge border-orange bottombar">Contact </span></div>
+          <div class="padding-16"><span class="xlarge border-orange bottombar size">Contact </span></div>
           <h3>Address</h3>
 
           <p><i class="fa fa-map-marker text-orange xlarge"></i> <b>Central Campus :</b>  6997 N. Glen Harbor
             Boulevard
             Glendale, AZ 85307</p>
-
           <p><i class="fa fa-phone text-orange xlarge"></i> <b>623-209-8070</b></p>
           <!-- This is an iframe holding a conection to google maps at the west mec central campus. 
             The src of the link for the maps. THe user of the little map provided, you are able to see it fullscreen (optional) 
@@ -262,16 +261,18 @@ it isnt blurry. It has a max and min height so that if the image isnt the exact 
     <!-- this is the footer It has links to several social media -->
     <footer class="container padding-32 theme-d1 center">
       <h4>Follow Us</h4>
-      <a class="button large orange" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
-      <a class="button large orange" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
-      <a class="button large orange" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-      <a class="button large orange" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
-      <a class="button large orange hide-small" href="javascript:void(0)" title="Linkedin"><i
-          class="fa fa-linkedin"></i></a>
+      <div>
+        <a class="button large orange" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+        <a class="button large orange" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+        <a class="button large orange" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+        <a class="button large orange" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+        <a class="button large orange hide-small" href="javascript:void(0)" title="Linkedin"><i
+            class="fa fa-linkedin"></i></a>
+      </div>
       <!-- This is the setion that send you to te top of the page -->
       <div style="position:relative;bottom:100px;z-index:1;" class="tooltip right">
         <span class="text padding orange hide-small">Go To Top</span>
-        <a class="button theme" href="#myPage"><span class="xlarge">
+        <a class="button theme" href="#myPage"><span class="xlarge size">
             <i class="fa fa-chevron-circle-up"></i></span></a>
       </div>
     </footer>

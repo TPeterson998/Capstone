@@ -31,11 +31,11 @@ function w3_close() {
 // Used to toggle the menu on smaller screens when clicking on the menu button
 // This allows the top nav to be clicked open out of the nav picture while the screen is smaller
 function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
+  var x = document.getElementById("navSmall");
+  if (x.className.indexOf("show") == -1) {
+    x.className += " show";
   } else {
-    x.className = x.className.replace(" w3-show", "");
+    x.className = x.className.replace(" show", "");
   }
 }
 //this is an array of all of the teachers

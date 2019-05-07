@@ -1,15 +1,55 @@
-.fa-twitter-square:before {
-    content: "\f081"
+@charset "utf-8";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.fa-instagram:before {
+    content: "\f16d";
 }
 
-.fa-facebook-square:before {
-    content: "\f082"
+.fa-twitter:before {
+    content: "\f099"
 }
 
-.fa-camera-retro:before {
-    content: "\f083"
+.fa-remove:before {
+    content: "\f00d"
 }
 
-.fa-key:before {
-    content: "\f084"
+.fa-bars:before {
+    content: "\f0c9"
+}
+
+.fa-home:before {
+    content: "\f015"
+}
+
+.fa-map-marker:before {
+    content: "\f041"
+}
+
+.fa-phone:before {
+    content: "\f095"
+}
+
+.fa-facebook:before {
+    content: "\f09a"
+}
+
+.fa-google-plus:before {
+    content: "\f0d5"
+}
+
+.fa-linkedin:before {
+    content: "\f0e1"
+}
+
+.fa-chevron-circle-up:before {
+    content: "\f139"
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
 }

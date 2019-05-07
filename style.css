@@ -1,24 +1,23 @@
-/* css */
+/* this establishes the border-box for the page and the text adjust size so that it has a better mobile form*/
 html {
-    box-sizing: border-box
+    box-sizing: border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
+/* This makes all elements and before and after these elements have border-box because they won't inherit it from the html without seting it to inherit  */
 *,
 *:before,
 *:after {
-    box-sizing: inherit
+    box-sizing: inherit;
 }
 
-/* html */
-html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
-}
-
+/* this elimenates all margins from the body makeing the body the same size as the html page */
 body {
     margin: 0
 }
 
+/* this is somthing out of a reset style sheet to make a bunch of stuff block incase we use them */
 article,
 aside,
 details,
@@ -31,73 +30,38 @@ menu,
 nav,
 section,
 summary {
-    display: block
+    display: block;
 }
 
-audio,
-canvas,
-progress,
-video {
-    display: inline-block
-}
-
-progress {
-    vertical-align: baseline
-}
-
-
-
-
+/* This  sets the heyperlinks to have no background color and to make the text decorations skip objects*/
 a {
     background-color: transparent;
-    -webkit-text-decoration-skip: objects
+    -webkit-text-decoration-skip: objects;
 }
 
+/* This sets there to be no outline over any hyperlinks */
 a:active,
 a:hover {
     outline-width: 0
 }
 
-abbr[title] {
-    border-bottom: none;
-    text-decoration: underline;
-    text-decoration: underline dotted
-}
-
-
+/* Gets rid of border styles from images */
 img {
     border-style: none
 }
 
-
+/* this is the defualt overflow setting and it makes it so any text that goes over the button and input just go outside of the box without changeing the size of the box or adding a scroll bar  */
 button,
 input {
     overflow: visible
 }
 
-button,
-select {
+/* This is a reset style sheet thing to make sure the defualt of is in play */
+button {
     text-transform: none
 }
 
-
-
-fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: .35em .625em .75em
-}
-
-legend {
-    color: inherit;
-    display: table;
-    max-width: 100%;
-    padding: 0;
-    white-space: normal
-}
-
-
-/* End extract */
+/* This sets the font family size and the space between the lines */
 html,
 body {
     font-family: Verdana, sans-serif;
@@ -105,10 +69,12 @@ body {
     line-height: 1.5
 }
 
+/* this cuts off images from on the x axis so that they can't be bigger then the page */
 html {
     overflow-x: hidden
 }
 
+/* This sets the size  */
 h1 {
     font-size: 36px
 }
@@ -117,7 +83,8 @@ h2 {
     font-size: 30px
 }
 
-h3 {
+h3,
+.size {
     font-size: 24px
 }
 
@@ -125,20 +92,11 @@ h4 {
     font-size: 20px
 }
 
-h5 {
-    font-size: 18px
-}
-
-h6 {
-    font-size: 16px
-}
-
 h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+    {
     font-family: "Segoe UI", Arial, sans-serif;
     font-weight: 400;
     margin: 10px 0
@@ -508,30 +466,17 @@ a {
 }
 
 .col,
-.half,
 .third,
-.twothird,
-.threequarter,
 .quarter {
     float: left;
     width: 100%
 }
 
 @media (min-width:601px) {
-    .col.m1 {
-        width: 8.33333%
-    }
-
-    .col.m2 {
-        width: 16.66666%
-    }
-
-    .col.m3,
     .quarter {
         width: 24.99999%
     }
 
-    .col.m4,
     .third {
         width: 33.33333%
     }
@@ -540,43 +485,14 @@ a {
         width: 41.66666%
     }
 
-    .col.m6,
-    .half {
-        width: 49.99999%
-    }
-
     .col.m7 {
         width: 58.33333%
     }
 
-    .col.m8,
-    .twothird {
-        width: 66.66666%
-    }
-
-    .col.m9,
-    .threequarter {
-        width: 74.99999%
-    }
-
-    .col.m10 {
-        width: 83.33333%
-    }
-
-    .col.m11 {
-        width: 91.66666%
-    }
-
-    .col.m12 {
-        width: 99.99999%
-    }
 }
 
 .row-padding,
-.row-padding>.half,
 .row-padding>.third,
-.row-padding>.twothird,
-.row-padding>.threequarter,
 .row-padding>.quarter,
 .row-padding>.col {
     padding: 0 8px
@@ -596,113 +512,12 @@ a {
     opacity: 1
 }
 
-.col.s1 {
-    width: 8.33333%
-}
-
-.col.s2 {
-    width: 16.66666%
-}
-
-.col.s3 {
-    width: 24.99999%
-}
-
-.col.s4 {
-    width: 33.33333%
-}
-
-.col.s5 {
-    width: 41.66666%
-}
-
-.col.s6 {
-    width: 49.99999%
-}
-
-.col.s7 {
-    width: 58.33333%
-}
-
-.col.s8 {
-    width: 66.66666%
-}
-
-.col.s9 {
-    width: 74.99999%
-}
-
-.col.s10 {
-    width: 83.33333%
-}
-
-.col.s11 {
-    width: 91.66666%
-}
-
-.col.s12 {
-    width: 99.99999%
-}
-
-
-
-@media (min-width:993px) {
-    .col.l1 {
-        width: 8.33333%
-    }
-
-    .col.l2 {
-        width: 16.66666%
-    }
-
-    .col.l3 {
-        width: 24.99999%
-    }
-
-    .col.l4 {
-        width: 33.33333%
-    }
-
-    .col.l5 {
-        width: 41.66666%
-    }
-
-    .col.l6 {
-        width: 49.99999%
-    }
-
-    .col.l7 {
-        width: 58.33333%
-    }
-
-    .col.l8 {
-        width: 66.66666%
-    }
-
-    .col.l9 {
-        width: 74.99999%
-    }
-
-    .col.l10 {
-        width: 83.33333%
-    }
-
-    .col.l11 {
-        width: 91.66666%
-    }
-
-    .col.l12 {
-        width: 99.99999%
-    }
-}
-
 .padding-16 {
     padding-top: 16px !important;
     padding-bottom: 16px !important
 }
 
-.section,
-.code {
+.section {
     margin-top: 16px !important;
     margin-bottom: 16px !important
 }
