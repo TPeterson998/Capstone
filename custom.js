@@ -93,7 +93,7 @@ function validateForm() {
   } else {
     email.setCustomValidity("");
   }
-  // validation;this part checks to make sure the message section is filled and if it is not it uses a custom alert
+  // validation this part checks to make sure the message section is filled and if it is not it uses a custom alert
   var message = document.getElementById("message");
   if (message.validity.valueMissing) {
     message.setCustomValidity("Enter Your Message Please");
@@ -101,16 +101,18 @@ function validateForm() {
     message.setCustomValidity("");
   }
 }
-
+// this is the array of the images used in the image cycler at the top
 var images = ["capstone_pics/aeroplane-aircraft-airplane-35854.jpg", "capstone_pics/abstract-air-cloud-36464.jpg",
   "capstone_pics/aeroplane-air-aircraft-912050.jpg", "capstone_pics/aeroplane-air-aircraft-912050.jpg",
   "capstone_pics/architectural-design-architecture-building-2071216.jpg", "capstone_pics/air-force-air-show-aircrafts-372797.jpg"
 ];
-
+// This gets a random image from the array above and sets it to the src of the top image
 function slideImage() {
   document.getElementById("img").src = images[Math.floor(Math.random() * 5)];
 }
+//By calling in slideImage once it makes the first image random
 slideImage();
+// This makes it so the first switch of the image takes 5 seconds longer but the rest of the image cycles every 8 seconds
 setTimeout(function () {
   setInterval(slideImage, 8000);
 }, 5000)
