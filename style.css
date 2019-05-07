@@ -550,3 +550,7 @@ a {
 .padding {
     padding: 8px 16px !important
 }
+
+.show {
+    display: block !important;
+}
