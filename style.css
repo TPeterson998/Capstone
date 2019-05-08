@@ -192,9 +192,14 @@ a {
     }
 }
 
-/* This sets the size of everything in the large class and makes it permenant */
+/* This sets the font size of everything in the large class and makes it permenant */
 .large {
     font-size: 18px !important
+}
+
+/* This sets the font size of everything in the xlarge class and makes it permenant  */
+.xlarge {
+    font-size: 24px !important
 }
 
 /* This increases the font size for everything in the xxlarge class and makes it permenant */
@@ -202,10 +207,12 @@ a {
     font-size: 36px !important
 }
 
-.bar-item.mobile {
+/* This centers the text of all bar-item classes */
+.bar-item {
     text-align: center
 }
 
+/* this sets the pading, width, border, the float to the left, no outline, and the display to block for all bar-item classes that are nested inside of the bar class */
 .bar .bar-item {
     padding: 8px 16px;
     float: left;
@@ -215,7 +222,7 @@ a {
     outline: 0
 }
 
-.btn,
+/* This sets many setting of the button class and includes several extentions just in case */
 .button {
     border: none;
     display: inline-block;
@@ -227,15 +234,7 @@ a {
     background-color: inherit;
     text-align: center;
     cursor: pointer;
-    white-space: nowrap
-}
-
-.btn:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-}
-
-.btn,
-.button {
+    white-space: nowrap;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -244,76 +243,69 @@ a {
     user-select: none
 }
 
-.disabled,
-.btn:disabled,
+/* this makes it so if the buttons are disabled then the cursor won't appear and the opacity is set low */
 .button:disabled {
     cursor: not-allowed;
     opacity: 0.3
 }
 
+/* this makes it so the white space is normal on all of the button class that are nested inside of the bar class */
 .bar .button {
     white-space: normal
 }
 
+/* this makes it so that whenever the page is bigger then 600 pixels then the smaller things on the page are replaced permently*/
 @media (max-width:600px) {
     .hide-small {
         display: none !important
     }
-
-    .mobile {
-        display: block;
-        width: 100% !important
-    }
 }
 
+/* This makes it so when you hovr on the button then it chages color and background color permently */
 .button:hover {
     color: #000 !important;
     background-color: #ccc !important
 }
 
+/* This makes everything in the the .dispaly-topright class be moved to the top right */
 .display-topright {
     position: absolute;
     right: 0;
     top: 0
 }
 
+/* this make the text orange permently */
 .text-orange {
     color: #ff9800 !important
 }
 
-.top,
-.bottom {
+/* this sets everything with the top class to a fixed poition at the top of the page with a max width and pulled to the front of the page */
+.top {
     position: fixed;
     width: 100%;
-    z-index: 1
+    z-index: 1;
+    top: 0;
 }
 
-.top {
-    top: 0
-}
-
+/* This makes it so that everything in the bar class has a max width, overflow hidden */
 .bar {
     width: 100%;
     overflow: hidden
 }
 
+/* this makes it so that everything with the bar has a display of inline-block and has the width automaticly set */
 .center .bar {
     display: inline-block;
-    width: auto
+    width: auto;
 }
 
+/* This is somthing out of a reset style sheet. This stops container collapse before and after all of these classes */
 .container:after,
 .container:before,
-.panel:after,
-.panel:before,
 .row:after,
 .row:before,
 .row-padding:after,
 .row-padding:before,
-.cell-row:before,
-.cell-row:after,
-.clear:after,
-.clear:before,
 .bar:before,
 .bar:after {
     content: "";
@@ -321,44 +313,53 @@ a {
     clear: both
 }
 
+/* this aligns the text left permently for all elements with this class */
 .left-align {
     text-align: left !important
 }
 
+/* THis makes it so between 992 and 601 the medium objects are hidden permently */
 @media (max-width:992px) and (min-width:601px) {
     .hide-medium {
         display: none !important
     }
 }
 
+/* this permently floats elements in this class to the right */
 .right {
     float: right !important
 }
 
+/* this makes the background color orange unchangeable to the elements in theis class and the text color black and unchangable*/
 .orange {
     color: #000 !important;
     background-color: #ff9800 !important
 }
 
+/* this sets the border-color to orange and makes it unchangeable to elements in this class */
 .border-orange {
     border-color: #ff9800 !important
 }
 
+/* Adds a unchangeable right margin of 16px to all elements with the margin-right class */
 .margin-right {
     margin-right: 16px !important
 }
 
+/* this hides items with this class */
 .hide {
     display: none !important
 }
 
+/* this makes the postion of the map and the top image relative */
 .tooltip,
 .display-container {
     position: relative
 }
 
+/* this next part makes the entire screen apear slowly  */
 .animate-opacity {
-    animation: opac 0.8s
+    animation: opac .8s
 }
 
 @keyframes opac {
@@ -371,30 +372,52 @@ a {
     }
 }
 
-.container,
-.panel {
-    padding: 0.01em 16px
+/* this makes everything with the container class have a padding  */
+.container {
+    padding: 0.01em 16px;
 }
 
+/* this make every element with this be moved to the bottom left of the screen */
 .display-bottomleft {
     position: absolute;
     left: 0;
     bottom: 0
 }
 
+/* this gives a bottom margin to everything that has tis class and makes it so it overrides everything else */
 .margin-bottom {
     margin-bottom: 16px !important
 }
 
+/* this is the basic padding 8px by 16px and maks sure it is unchangeable */
+.padding {
+    padding: 8px 16px !important
+}
+
+/* this give 16px of top and bottom margin to everything with this class and makes sure that it is permentant */
+.padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important
+}
+
+/* this give 32px of top and bottom margin to everything with this class and makes sure that it is permentant */
+.padding-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important
+}
+
+/* This sets a 64px padding to the top and the bottom and sets it no matter what  */
 .padding-64 {
     padding-top: 64px !important;
     padding-bottom: 64px !important
 }
 
+/* this centers everything with this class and give it persidence over other styles */
 .center {
     text-align: center !important
 }
 
+/* this makes several spacings that I used take up all width in their area and floats them to the left */
 .col,
 .third,
 .quarter {
@@ -402,6 +425,7 @@ a {
     width: 100%
 }
 
+/* this makes the sizing sections I used mobile so that when the page is below 601px it shrinks */
 @media (min-width:601px) {
     .quarter {
         width: 24.99999%
@@ -421,6 +445,7 @@ a {
 
 }
 
+/* this gives padding and makes sure it is applied to the sizing sections that I made only when they are direct children of the row padding class */
 .row-padding,
 .row-padding>.third,
 .row-padding>.quarter,
@@ -428,30 +453,17 @@ a {
     padding: 0 8px
 }
 
+/* this is used to make the pictures a circle and to make the + button a circle */
 .circle {
     border-radius: 50%
 }
 
-.opacity,
+/* this makes it so that when the team pictures are hovered over they become slightly see through */
 .hover-opacity:hover {
     opacity: 0.60
 }
 
-.opacity-off,
-.hover-opacity-off:hover {
-    opacity: 1
-}
-
-.padding-16 {
-    padding-top: 16px !important;
-    padding-bottom: 16px !important
-}
-
-.section {
-    margin-top: 16px !important;
-    margin-bottom: 16px !important
-}
-
+/* this makes all of the inputs have a short padding, just a bottom border that is light grey, with maximum width of the form and displays as block */
 .input {
     padding: 8px;
     display: block;
@@ -460,11 +472,7 @@ a {
     width: 100%
 }
 
-.padding-32 {
-    padding-top: 32px !important;
-    padding-bottom: 32px !important
-}
-
+/* This makes any text in the arrowup is hidden and makes it so that when you hover over the arrow the text will appear */
 .tooltip .text {
     display: none
 }
@@ -473,10 +481,7 @@ a {
     display: inline-block
 }
 
-.padding {
-    padding: 8px 16px !important
-}
-
+/* this is used in the JavaScript to make sure that when the navicon is hovered on the nav appears */
 .show {
     display: block !important;
 }
