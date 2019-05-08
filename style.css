@@ -74,7 +74,7 @@ html {
     overflow-x: hidden
 }
 
-/* This sets the size  */
+/* This sets the size of the all of the headings and of the size class */
 h1 {
     font-size: 36px
 }
@@ -92,6 +92,7 @@ h4 {
     font-size: 20px
 }
 
+/* This sets up the font family weight and the basic margin of the headings */
 h1,
 h2,
 h3,
@@ -102,20 +103,17 @@ h4,
     margin: 10px 0
 }
 
-hr {
-    border: 0;
-    border-top: 1px solid #eee;
-    margin: 20px 0
-}
-
+/* this aligns the images of the site verticlly */
 img {
     vertical-align: middle
 }
 
+/* Lets the hyperlink inherit their font color from thier parent elements */
 a {
     color: inherit
 }
 
+/* This sets the side bar styles with height, width, background color. It also makes sure that it is pulleed in frount of the rest of the page and it, lets a scroll bar apear only if nesesary and makes sure that the position is fixed no matter what*/
 .sidebar {
     height: 100%;
     width: 200px;
@@ -125,27 +123,15 @@ a {
     overflow: auto
 }
 
-
+/* This makes it so the side bar disapears when the page is smaller then 992 pixels*/
 @media (max-width:992px) {
     .sidebar.collapse {
         display: none
     }
-
-    .main {
-        margin-left: 0 !important;
-        margin-right: 0 !important
-    }
-
-    .auto {
-        max-width: 100%
-    }
 }
 
+/* this makes it so that when the page is bigger then 993 pixels then large things are hidden and the sidebar is hidden*/
 @media (min-width:993px) {
-    .modal-content {
-        width: 900px
-    }
-
     .hide-large {
         display: none !important
     }
@@ -155,11 +141,7 @@ a {
     }
 }
 
-.bar-block .dropdown-hover,
-.bar-block .dropdown-click {
-    width: 100%
-}
-
+/* this adds a width, padding, takes away floats and borders while aligning the text to the left. It sets the display to block, makes white space normal, and gets rid of an outline on all elements that are in the bar-item class and decended from the bar-block class */
 .bar-block .bar-item {
     width: 100%;
     display: block;
@@ -171,36 +153,28 @@ a {
     outline: 0
 }
 
+/* This ceters text in all elements with the bar-item class as long as one of thier parents classes is bar-block or center */
 .bar-block.center .bar-item {
     text-align: center
 }
 
-.white,
-.hover-white:hover {
+/* Makes sure that every in the white class will always have a white background and blakc text */
+.white {
     color: #000 !important;
     background-color: #fff !important
 }
 
-.text-white,
-.hover-text-white:hover {
-    color: #fff !important
+/* This gives everything in the card class has two box shadows one slightly longer and more transparent*/
+.card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-.border-white,
-.hover-border-white:hover {
-    border-color: #fff !important
-}
-
-.card,
+/* This gives every element with the class card-2 two box shandows with one much longer then the other and more visable*/
 .card-2 {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card-4,
-.hover-shadow:hover {
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19)
-}
-
+/* This next section allows the side nav to take a little time to open so it looks like it is sliding open intead of just appearing open*/
 .animate-left {
     position: relative;
     animation: animateleft 0.4s
@@ -218,6 +192,12 @@ a {
     }
 }
 
+/* This sets the size of everything in the large class and makes it permenant */
+.large {
+    font-size: 18px !important
+}
+
+/* This increases the font size for everything in the xxlarge class and makes it permenant */
 .xxlarge {
     font-size: 36px !important
 }
@@ -271,31 +251,11 @@ a {
     opacity: 0.3
 }
 
-.dropdown-hover:hover>.button:first-child,
-.dropdown-click:hover>.button:first-child {
-    background-color: #ccc;
-    color: #000
-}
-
 .bar .button {
     white-space: normal
 }
 
 @media (max-width:600px) {
-    .modal-content {
-        margin: 0 10px;
-        width: auto !important
-    }
-
-    .modal {
-        padding-top: 30px
-    }
-
-    .dropdown-hover.mobile .dropdown-content,
-    .dropdown-click.mobile .dropdown-content {
-        position: relative
-    }
-
     .hide-small {
         display: none !important
     }
@@ -303,17 +263,6 @@ a {
     .mobile {
         display: block;
         width: 100% !important
-    }
-
-
-
-    .dropdown-hover.mobile,
-    .dropdown-hover.mobile .btn,
-    .dropdown-hover.mobile .button,
-    .dropdown-click.mobile,
-    .dropdown-click.mobile .btn,
-    .dropdown-click.mobile .button {
-        width: 100%
     }
 }
 
@@ -328,8 +277,7 @@ a {
     top: 0
 }
 
-.text-orange,
-.hover-text-orange:hover {
+.text-orange {
     color: #ff9800 !important
 }
 
@@ -352,14 +300,6 @@ a {
 .center .bar {
     display: inline-block;
     width: auto
-}
-
-
-
-.bar .dropdown-hover,
-.bar .dropdown-click {
-    position: static;
-    float: left
 }
 
 .container:after,
@@ -395,14 +335,12 @@ a {
     float: right !important
 }
 
-.orange,
-.hover-orange:hover {
+.orange {
     color: #000 !important;
     background-color: #ff9800 !important
 }
 
-.border-orange,
-.hover-border-orange:hover {
+.border-orange {
     border-color: #ff9800 !important
 }
 
@@ -417,14 +355,6 @@ a {
 .tooltip,
 .display-container {
     position: relative
-}
-
-.display-container:hover .display-hover {
-    display: block
-}
-
-.display-container:hover span.display-hover {
-    display: inline-block
 }
 
 .animate-opacity {
@@ -533,10 +463,6 @@ a {
 .padding-32 {
     padding-top: 32px !important;
     padding-bottom: 32px !important
-}
-
-.large {
-    font-size: 18px !important
 }
 
 .tooltip .text {
