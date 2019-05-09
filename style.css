@@ -5,7 +5,8 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
-/* This makes all elements and before and after these elements have border-box because they won't inherit it from the html without seting it to inherit  */
+/* This makes all elements and before and after these elements have border-box because 
+they won't inherit it from the html without seting it to inherit  */
 *,
 *:before,
 *:after {
@@ -50,7 +51,8 @@ img {
     border-style: none
 }
 
-/* this is the defualt overflow setting and it makes it so any text that goes over the button and input just go outside of the box without changeing the size of the box or adding a scroll bar  */
+/* this is the defualt overflow setting and it makes it so any text that goes over the button 
+and input just go outside of the box without changeing the size of the box or adding a scroll bar  */
 button,
 input {
     overflow: visible
@@ -113,7 +115,9 @@ a {
     color: inherit
 }
 
-/* This sets the side bar styles with height, width, background color. It also makes sure that it is pulleed in frount of the rest of the page and it, lets a scroll bar apear only if nesesary and makes sure that the position is fixed no matter what*/
+/* This sets the side bar styles with height, width, background color. It also makes sure 
+that it is pulleed in frount of the rest of the page and it, lets a scroll bar apear only 
+if nesesary and makes sure that the position is fixed no matter what*/
 .sidebar {
     height: 100%;
     width: 200px;
@@ -141,7 +145,9 @@ a {
     }
 }
 
-/* this adds a width, padding, takes away floats and borders while aligning the text to the left. It sets the display to block, makes white space normal, and gets rid of an outline on all elements that are in the bar-item class and decended from the bar-block class */
+/* this adds a width, padding, takes away floats and borders while aligning 
+the text to the left. It sets the display to block, makes white space normal,
+ and gets rid of an outline on all elements that are in the bar-item class and decended from the bar-block class */
 .bar-block .bar-item {
     width: 100%;
     display: block;
@@ -212,7 +218,8 @@ a {
     text-align: center
 }
 
-/* this sets the pading, width, border, the float to the left, no outline, and the display to block for all bar-item classes that are nested inside of the bar class */
+/* this sets the pading, width, border, the float to the left, no outline, 
+and the display to block for all bar-item classes that are nested inside of the bar class */
 .bar .bar-item {
     padding: 8px 16px;
     float: left;
@@ -279,7 +286,8 @@ a {
     color: #ff9800 !important
 }
 
-/* this sets everything with the top class to a fixed poition at the top of the page with a max width and pulled to the front of the page */
+/* this sets everything with the top class to a fixed poition at the top of the 
+page with a max width and pulled to the front of the page */
 .top {
     position: fixed;
     width: 100%;
@@ -445,7 +453,8 @@ a {
 
 }
 
-/* this gives padding and makes sure it is applied to the sizing sections that I made only when they are direct children of the row padding class */
+/* this gives padding and makes sure it is applied to the sizing sections that 
+I made only when they are direct children of the row padding class */
 .row-padding,
 .row-padding>.third,
 .row-padding>.quarter,
@@ -463,7 +472,8 @@ a {
     opacity: 0.60
 }
 
-/* this makes all of the inputs have a short padding, just a bottom border that is light grey, with maximum width of the form and displays as block */
+/* this makes all of the inputs have a short padding, just a bottom border 
+that is light grey, with maximum width of the form and displays as block */
 .input {
     padding: 8px;
     display: block;
@@ -485,3 +495,5 @@ a {
 .show {
     display: block !important;
 }
+
+
