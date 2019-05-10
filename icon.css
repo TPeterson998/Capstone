@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* this is a link that lets us use these character codes */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* these are all of the special charcodes that are used like the different social medias, the house, the nav icon, the location icon, the phone and email icons  */
+.fa-instagram:before {
+    content: "\f16d";
+}
+
+.fa-twitter:before {
+    content: "\f099"
+}
+
+.fa-remove:before {
+    content: "\f00d"
+}
+
+.fa-bars:before {
+    content: "\f0c9"
+}
+
+.fa-home:before {
+    content: "\f015"
+}
+
+.fa-map-marker:before {
+    content: "\f041"
+}
+
+.fa-phone:before {
+    content: "\f095"
+}
+
+.fa-facebook:before {
+    content: "\f09a"
+}
+
+.fa-google-plus:before {
+    content: "\f0d5"
+}
+
+.fa-linkedin:before {
+    content: "\f0e1"
+}
+
+.fa-chevron-circle-up:before {
+    content: "\f139"
+}
+
+/* these are styles for all of the charcodes for display and to smooth it out and make sure that it is the right color and size */
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}

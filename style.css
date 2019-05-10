@@ -1,0 +1,499 @@
+/* this establishes the border-box for the page and the text adjust size so that it has a better mobile form*/
+html {
+    box-sizing: border-box;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* This makes all elements and before and after these elements have border-box because 
+they won't inherit it from the html without seting it to inherit  */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* this elimenates all margins from the body makeing the body the same size as the html page */
+body {
+    margin: 0
+}
+
+/* this is somthing out of a reset style sheet to make a bunch of stuff block incase we use them */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/* This  sets the heyperlinks to have no background color and to make the text decorations skip objects*/
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+/* This sets there to be no outline over any hyperlinks */
+a:active,
+a:hover {
+    outline-width: 0
+}
+
+/* Gets rid of border styles from images */
+img {
+    border-style: none
+}
+
+/* this is the defualt overflow setting and it makes it so any text that goes over the button 
+and input just go outside of the box without changeing the size of the box or adding a scroll bar  */
+button,
+input {
+    overflow: visible
+}
+
+/* This is a reset style sheet thing to make sure the defualt of is in play */
+button {
+    text-transform: none
+}
+
+/* This sets the font family size and the space between the lines */
+html,
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+
+/* this cuts off images from on the x axis so that they can't be bigger then the page */
+html {
+    overflow-x: hidden
+}
+
+/* This sets the size of the all of the headings and of the size class */
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3,
+.size {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+/* This sets up the font family weight and the basic margin of the headings */
+h1,
+h2,
+h3,
+h4,
+    {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+
+/* this aligns the images of the site verticlly */
+img {
+    vertical-align: middle
+}
+
+/* Lets the hyperlink inherit their font color from thier parent elements */
+a {
+    color: inherit
+}
+
+/* This sets the side bar styles with height, width, background color. It also makes sure 
+that it is pulleed in frount of the rest of the page and it, lets a scroll bar apear only 
+if nesesary and makes sure that the position is fixed no matter what*/
+.sidebar {
+    height: 100%;
+    width: 200px;
+    background-color: #fff;
+    position: fixed !important;
+    z-index: 1;
+    overflow: auto
+}
+
+/* This makes it so the side bar disapears when the page is smaller then 992 pixels*/
+@media (max-width:992px) {
+    .sidebar.collapse {
+        display: none
+    }
+}
+
+/* this makes it so that when the page is bigger then 993 pixels then large things are hidden and the sidebar is hidden*/
+@media (min-width:993px) {
+    .hide-large {
+        display: none !important
+    }
+
+    .sidebar.collapse {
+        display: block !important
+    }
+}
+
+/* this adds a width, padding, takes away floats and borders while aligning 
+the text to the left. It sets the display to block, makes white space normal,
+ and gets rid of an outline on all elements that are in the bar-item class and decended from the bar-block class */
+.bar-block .bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    float: none;
+    outline: 0
+}
+
+/* This ceters text in all elements with the bar-item class as long as one of thier parents classes is bar-block or center */
+.bar-block.center .bar-item {
+    text-align: center
+}
+
+/* Makes sure that every in the white class will always have a white background and blakc text */
+.white {
+    color: #000 !important;
+    background-color: #fff !important
+}
+
+/* This gives everything in the card class has two box shadows one slightly longer and more transparent*/
+.card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* This gives every element with the class card-2 two box shandows with one much longer then the other and more visable*/
+.card-2 {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* This next section allows the side nav to take a little time to open so it looks like it is sliding open intead of just appearing open*/
+.animate-left {
+    position: relative;
+    animation: animateleft 0.4s
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+/* This sets the font size of everything in the large class and makes it permenant */
+.large {
+    font-size: 18px !important
+}
+
+/* This sets the font size of everything in the xlarge class and makes it permenant  */
+.xlarge {
+    font-size: 24px !important
+}
+
+/* This increases the font size for everything in the xxlarge class and makes it permenant */
+.xxlarge {
+    font-size: 36px !important
+}
+
+/* This centers the text of all bar-item classes */
+.bar-item {
+    text-align: center
+}
+
+/* this sets the pading, width, border, the float to the left, no outline, 
+and the display to block for all bar-item classes that are nested inside of the bar class */
+.bar .bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0
+}
+
+/* This sets many setting of the button class and includes several extentions just in case */
+.button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+/* this makes it so if the buttons are disabled then the cursor won't appear and the opacity is set low */
+.button:disabled {
+    cursor: not-allowed;
+    opacity: 0.3
+}
+
+/* this makes it so the white space is normal on all of the button class that are nested inside of the bar class */
+.bar .button {
+    white-space: normal
+}
+
+/* this makes it so that whenever the page is bigger then 600 pixels then the smaller things on the page are replaced permently*/
+@media (max-width:600px) {
+    .hide-small {
+        display: none !important
+    }
+}
+
+/* This makes it so when you hovr on the button then it chages color and background color permently */
+.button:hover {
+    color: #000 !important;
+    background-color: #ccc !important
+}
+
+/* This makes everything in the the .dispaly-topright class be moved to the top right */
+.display-topright {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+/* this make the text orange permently */
+.text-orange {
+    color: #ff9800 !important
+}
+
+/* this sets everything with the top class to a fixed poition at the top of the 
+page with a max width and pulled to the front of the page */
+.top {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+/* This makes it so that everything in the bar class has a max width, overflow hidden */
+.bar {
+    width: 100%;
+    overflow: hidden
+}
+
+/* this makes it so that everything with the bar has a display of inline-block and has the width automaticly set */
+.center .bar {
+    display: inline-block;
+    width: auto;
+}
+
+/* This is somthing out of a reset style sheet. This stops container collapse before and after all of these classes */
+.container:after,
+.container:before,
+.row:after,
+.row:before,
+.row-padding:after,
+.row-padding:before,
+.bar:before,
+.bar:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+/* this aligns the text left permently for all elements with this class */
+.left-align {
+    text-align: left !important
+}
+
+/* THis makes it so between 992 and 601 the medium objects are hidden permently */
+@media (max-width:992px) and (min-width:601px) {
+    .hide-medium {
+        display: none !important
+    }
+}
+
+/* this permently floats elements in this class to the right */
+.right {
+    float: right !important
+}
+
+/* this makes the background color orange unchangeable to the elements in theis class and the text color black and unchangable*/
+.orange {
+    color: #000 !important;
+    background-color: #ff9800 !important
+}
+
+/* this sets the border-color to orange and makes it unchangeable to elements in this class */
+.border-orange {
+    border-color: #ff9800 !important
+}
+
+/* Adds a unchangeable right margin of 16px to all elements with the margin-right class */
+.margin-right {
+    margin-right: 16px !important
+}
+
+/* this hides items with this class */
+.hide {
+    display: none !important
+}
+
+/* this makes the postion of the map and the top image relative */
+.tooltip,
+.display-container {
+    position: relative
+}
+
+/* this next part makes the entire screen apear slowly  */
+.animate-opacity {
+    animation: opac .8s
+}
+
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* this makes everything with the container class have a padding  */
+.container {
+    padding: 0.01em 16px;
+}
+
+/* this make every element with this be moved to the bottom left of the screen */
+.display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0
+}
+
+/* this gives a bottom margin to everything that has tis class and makes it so it overrides everything else */
+.margin-bottom {
+    margin-bottom: 16px !important
+}
+
+/* this is the basic padding 8px by 16px and maks sure it is unchangeable */
+.padding {
+    padding: 8px 16px !important
+}
+
+/* this give 16px of top and bottom margin to everything with this class and makes sure that it is permentant */
+.padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important
+}
+
+/* this give 32px of top and bottom margin to everything with this class and makes sure that it is permentant */
+.padding-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important
+}
+
+/* This sets a 64px padding to the top and the bottom and sets it no matter what  */
+.padding-64 {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important
+}
+
+/* this centers everything with this class and give it persidence over other styles */
+.center {
+    text-align: center !important
+}
+
+/* this makes several spacings that I used take up all width in their area and floats them to the left */
+.col,
+.third,
+.quarter {
+    float: left;
+    width: 100%
+}
+
+/* this makes the sizing sections I used mobile so that when the page is below 601px it shrinks */
+@media (min-width:601px) {
+    .quarter {
+        width: 24.99999%
+    }
+
+    .third {
+        width: 33.33333%
+    }
+
+    .col.m5 {
+        width: 41.66666%
+    }
+
+    .col.m7 {
+        width: 58.33333%
+    }
+
+}
+
+/* this gives padding and makes sure it is applied to the sizing sections that 
+I made only when they are direct children of the row padding class */
+.row-padding,
+.row-padding>.third,
+.row-padding>.quarter,
+.row-padding>.col {
+    padding: 0 8px
+}
+
+/* this is used to make the pictures a circle and to make the + button a circle */
+.circle {
+    border-radius: 50%
+}
+
+/* this makes it so that when the team pictures are hovered over they become slightly see through */
+.hover-opacity:hover {
+    opacity: 0.60
+}
+
+/* this makes all of the inputs have a short padding, just a bottom border 
+that is light grey, with maximum width of the form and displays as block */
+.input {
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%
+}
+
+/* This makes any text in the arrowup is hidden and makes it so that when you hover over the arrow the text will appear */
+.tooltip .text {
+    display: none
+}
+
+.tooltip:hover .text {
+    display: inline-block
+}
+
+/* this is used in the JavaScript to make sure that when the navicon is hovered on the nav appears */
+.show {
+    display: block !important;
+}
+
+
