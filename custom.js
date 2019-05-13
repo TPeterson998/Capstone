@@ -102,13 +102,12 @@ function validateForm() {
   }
 }
 // this is the array of the images used in the image cycler at the top
-var images = ["capstone_pics/aeroplane-aircraft-airplane-35854.jpg", "capstone_pics/abstract-air-cloud-36464.jpg",
-  "capstone_pics/aeroplane-air-aircraft-912050.jpg", "capstone_pics/aeroplane-air-aircraft-912050.jpg",
-  "capstone_pics/architectural-design-architecture-building-2071216.jpg", "capstone_pics/air-force-air-show-aircrafts-372797.jpg"
+var images = ["capstone_pics/aeroplane-aircraft-airplane-edit.jpg", "capstone_pics/abstract-air-cloud-edit.jpg",
+  "capstone_pics/aeroplane-air-aircraft-edit.jpg", "capstone_pics/architectural-design-architecture-building-edit2.jpg"
 ];
 // This gets a random image from the array above and sets it to the src of the top image
 function slideImage() {
-  document.getElementById("img").src = images[Math.floor(Math.random() * 5)];
+  document.getElementById("img").src = images[Math.floor(Math.random() * 4)];
 }
 //By calling in slideImage once it makes the first image random
 slideImage();
